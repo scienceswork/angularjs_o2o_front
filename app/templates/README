@@ -1,0 +1,3 @@
+这里放置Angularjs的directive生成的自定义标签模版
+重写的html标签统一使用gk-***为标准，例如:
+gk-header/gk-footer

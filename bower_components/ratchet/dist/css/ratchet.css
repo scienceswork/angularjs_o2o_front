@@ -492,7 +492,7 @@ input[type="button"] {
   height: 44px;
   padding-right: 10px;
   padding-left: 10px;
-  background-color: white;
+  background-color:#fff;
   border-bottom: 1px solid #ddd;
 
   -webkit-backface-visibility: hidden;

@@ -29,13 +29,12 @@
  -->
  <!-- common-footer -->
     <div class="footer">
-      <button class="btn">test</button>
       <div ng-include="'./views/common/footer.html'"></div>
     </div>
 
 <!-- common-footer_______end -->
     <div class="content">
-      <div ng-view=""></div>
+      <div ui-view></div>
     </div>
 
 
@@ -60,10 +59,11 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/ratchet/dist/js/ratchet.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/requirejs/require.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

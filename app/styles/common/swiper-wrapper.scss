@@ -1,0 +1,6 @@
+#slide{width:100%;height:10rem;position:relative;overflow: hidden}
+#slide .swiper-slide{text-align:center;height:10rem;float:left;position: absolute;}
+#slide .swiper-slide img{display:inline-block;width:auto;max-width:100%;height:10rem;/* margin: 0 auto; */}
+#slide .pagination{position: absolute; z-index: 20; bottom:5px; width:100%; text-align: center; right:0;}
+#slide .swiper-pagination-bullet{display: inline-block; width:15px; height:5px; border-radius:0; background:green; margin: 0 2px; opacity: 0.8; cursor: pointer;}
+#slide .swiper-pagination-bullet-active{background:#97d38d;}

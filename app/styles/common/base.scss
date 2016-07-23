@@ -1,6 +1,12 @@
 //
 // Base styles
 // --------------------------------------------------
+@import "variables.scss";
+
+
+// Mixins
+@import "mixins.scss";
+
 
 // Use box sizing on all the things!
 * {

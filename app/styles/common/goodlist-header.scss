@@ -1,7 +1,7 @@
 //
 // Table views
 // --------------------------------------------------
-
+@import "variables.scss";
 .table-view {
   padding-left: 0;
   margin-top: 0;
@@ -106,3 +106,4 @@
 .content > .table-view:first-child {
   margin-top: 15px;
 }
+.table-view .icon{float: right};

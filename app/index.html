@@ -28,14 +28,14 @@
     </div>
  -->
  <!-- common-footer -->
-    <div class="footer">
-      <div ng-include="'./views/common/footer.html'"></div>
-    </div>
+
+      <div ng-include="'views/main.html'"></div>
+
 
 <!-- common-footer_______end -->
-    <div class="content">
+<!--     <div class="content">
       <div ui-view></div>
-    </div>
+    </div> -->
 
 
 
@@ -50,7 +50,7 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
-
+    
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/angular/angular.js"></script>
@@ -71,6 +71,18 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/swiper.min.js"></script>
         <!-- endbuild -->
+        <script>
+        window.onload=function(){
+          var mySwiper = new Swiper('#slide',{
+          autoplay:5000,
+          loop:true,
+          visibilityFullFit : true,
+          pagination : '.pagination',
+          })
+        };
+
+        </script>
 </body>
 </html>

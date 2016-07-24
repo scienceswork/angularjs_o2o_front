@@ -4,20 +4,6 @@
 @import "variables.scss";
 
 
-// Mixins
-@import "mixins.scss";
-
-// Normalize & Base CSS
-@import "normalize.scss";
-@import "base.scss";
-@import "type.scss";
-
-// Components
-@import "bars.scss";
-
-// Ratchicons
-@import "icons.scss";
-
 //slide
 @import "swiper-wrapper.scss";
 
@@ -27,5 +13,6 @@
 //goodList
 @import "goodList.scss";
 
-//goodlist-header
-@import "goodlist-header.scss";
+
+//login
+@import "login.scss";

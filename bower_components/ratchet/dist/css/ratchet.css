@@ -235,7 +235,7 @@ th {
 }
 
 body {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   right: 0;
   bottom: 0;
@@ -721,7 +721,7 @@ input[type="button"] {
 .table-view {
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
   list-style: none;
   background-color: #fff;
   border-top: 1px solid #ddd;

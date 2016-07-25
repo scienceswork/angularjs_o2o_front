@@ -1,0 +1,27 @@
+$list-background:#fff;
+
+
+.list{
+	background:$list-background;
+    font-size: 0;
+    padding: 5px;
+}
+.list-block{
+	border-bottom: 1px solid #e8e6e6;
+    border-right: 1px solid #e8e6e6;
+    color: #778185;
+    display: inline-block;
+    font-size: 12px;
+    height: 70px;
+    overflow: hidden;
+    width: 33%;
+	text-align: center;
+	h1{
+	color: #fd2b63;
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+	}
+}
+.list-block:nth-child(3n){border-right: 0;}

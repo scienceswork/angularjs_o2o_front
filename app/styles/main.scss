@@ -10,6 +10,7 @@
 
 body {
   padding: 0;
+  background-color: #f4f4f4;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -89,3 +90,24 @@ body {
 }
 /*common type*/
 .wraper{height: 100%;}
+a:hover{cursor:pointer}
+.logo,.userhead-Pic{
+  margin: 8.125rem auto 8.125rem;
+  text-align: center;
+  img{
+    width:30px;
+    height: 30px;
+  }
+}
+.partition-line{
+  height:1px;
+  width: 98%;
+  margin: 0 1%;
+  background-color:#e8e6e6;
+}
+.partition-block{
+  height: 8px;
+  width: 100%;
+  background-color:#e8e6e6;
+  border:0;
+}

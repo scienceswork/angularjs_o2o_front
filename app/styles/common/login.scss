@@ -14,18 +14,13 @@ html{height: 100%;}
 
 
 
-.login-wraper .login-logo{
-  margin: 4.375rem auto 8.125rem;
-  text-align: center;
-}
 .input-group{background-color:$login-background;padding: 1rem;input{text-align: center;}}
 .btn-valid{    background: 0 0;
   border-left: 1px solid #fff;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   padding: 0.25rem;
   position: absolute;
-  right: 1.5rem;
-  top:20.1rem;
+  right: 2rem;
   width: 4.375rem;
   z-index: 99;}
 

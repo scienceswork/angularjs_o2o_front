@@ -1,0 +1,52 @@
+  <header class="bar bar-nav">
+    <button class="btn btn-link btn-nav pull-left">
+      <span class="icon icon-left"></span>
+    </button>
+    <h1 class="title">添加收货地址</h1>
+    <button class="btn btn-link btn-nav pull-right">
+      保存
+    </button>
+  </header>
+  <div class="content" style="background-color: #f4f4f4;" ng-app="address">
+  	<form class="input-group" style="background-color: #fff;">
+      <div class="input-row">
+        <label>收货人姓名</label>
+        <input type="text" placeholder="">
+      </div>
+      <div class="input-row">
+        <label>手机号码</label>
+        <input type="text" placeholder="">
+      </div>
+      <div class="partition-block"></div>
+      <div class="selectAddress">
+      	<div class="selectProv">
+	      	<span>选择省份</span>
+	      	<div class="icon pull-right icon-right" style="float: right"></div>
+			<select ng-model="selectedProv">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+      	</div>
+      	<div class="selectCity">
+	      	<span>选择城市</span>
+	      	<div class="icon pull-right icon-right" style="float: right;"></div>
+			<select ng-model="selectedCity">
+				<option value="1">1</option>
+				<option value="1">1</option>
+				<option value="1">1</option>
+			</select>
+      	</div>
+      	<div class="selectSchool">
+	      	<span>选择城市</span>
+	      	<div class="icon pull-right icon-right" style="float: right;"></div>
+			<select ng-model="selectedSchool">
+				<option value="1">1</option>
+				<option value="1">1</option>
+				<option value="1">1</option>
+			</select>
+      	</div>
+      </div>
+      <textarea name="详细地址" id="" cols="30" rows="5" style="border: 1px dashed #777;padding: 10px;">填写详细地址</textarea>
+    </form>
+  </div>

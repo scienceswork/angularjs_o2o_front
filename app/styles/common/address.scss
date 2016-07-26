@@ -1,0 +1,17 @@
+.selectAddress{padding-top:15px;}
+.selectProv,.selectCity,.selectSchool{
+	clear:both;
+	width: 100%;
+	height:50px;
+	color:#777;
+	span{float:left;}
+	select{
+		background-color:#fff;
+		float:right;
+		width:200px;
+	}
+	div{
+		color:#ccc;
+		font-size:16px;
+	}
+}

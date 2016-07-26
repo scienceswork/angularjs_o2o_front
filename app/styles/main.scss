@@ -91,12 +91,21 @@ body {
 /*common type*/
 .wraper{height: 100%;}
 a:hover{cursor:pointer}
-.logo,.userhead-Pic{
+.logo{
   margin: 8.125rem auto 8.125rem;
   text-align: center;
   img{
     width:30px;
     height: 30px;
+  }
+}
+.userhead-Pic{
+  margin: 6.125rem auto 6.125rem;
+  text-align: center;
+  img{
+    border-radius:50%;
+    width:80px;
+    height: 80px;
   }
 }
 .partition-line{

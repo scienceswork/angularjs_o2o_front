@@ -1,0 +1,25 @@
+$currentCity-color:#000;
+.currentCity,.hot-city{
+	margin:1rem 0 1rem 1rem;  
+	p{
+	height:30px;
+	font-size:17px;
+    color:$currentCity-color;
+	padding:5px 0 0 10px;
+  	}
+}
+.currentCity-title{
+  font-size:14px;
+  color:#777;
+}
+.hot-city ul{padding-left:10px;}
+.hot-city li{
+	// width:30%;
+	padding:4px 15px;
+	margin:5px;
+	height:35px;
+	line-height:35px;
+	text-align:center;
+	display:inline-block;
+	background-color:#fff;
+}

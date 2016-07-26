@@ -25,3 +25,15 @@ $list-background:#fff;
 	}
 }
 .list-block:nth-child(3n){border-right: 0;}
+.order-item{
+    padding:5px 10px;
+    text-align: center;
+    a{
+    padding-top:10px;
+    color: #4a4a4a;
+    display: inline-block;
+    font-size: 11px;
+    position: relative;
+    width: 18%;
+    }
+}

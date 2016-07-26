@@ -100,12 +100,15 @@ a:hover{cursor:pointer}
   }
 }
 .userhead-Pic{
-  margin: 6.125rem auto 6.125rem;
+  margin: 2.125rem auto 2.125rem;
   text-align: center;
   img{
+    border:2px solid #999;
+    padding: 2px;
     border-radius:50%;
     width:80px;
     height: 80px;
+    background-color: #f4f4f4;
   }
 }
 .partition-line{

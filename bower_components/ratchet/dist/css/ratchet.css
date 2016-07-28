@@ -1007,8 +1007,8 @@ select {
 
 .popover {
   position: fixed;
-  top: 55px;
-  left: 50%;
+  top: 110px;
+  right: 0px;
   z-index: 20;
   display: none;
   width: 280px;
@@ -1028,7 +1028,7 @@ select {
 .popover:before {
   position: absolute;
   top: -15px;
-  left: 50%;
+  right:15px;
   width: 0;
   height: 0;
   margin-left: -15px;

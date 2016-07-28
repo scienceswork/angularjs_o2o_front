@@ -9,7 +9,7 @@
   </header>
 
 
-  <div class="content" style="background-color: #f4f4f4;" ng-app="address">
+  <div class="content" style="background-color: #f4f4f4;" ng-app="app">
   	<form class="input-group" style="background-color: #fff;">
       <!-- 输入框部分 -->
       <div class="input-row">
@@ -23,38 +23,33 @@
       <div class="partition-block"></div>
 	 <!-- 输入框部分-结束 -->
 	 <!-- select选择框 -->
-	 	<!-- 选择省份 -->
-      <div class="selectAddress">
+ 	
+      <div class="selectAddress" ng-controller="myctrl">
+        <!-- 选择省份 -->
       	<div class="selectProv">
 	      	<span>选择省份</span>
 	      	<div class="icon pull-right icon-right" style="float: right"></div>
-			<select ng-model="selectedProv">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-			</select>
+    			<select ng-model="selectedProv" ng-options="item.id as item.text for item in regionData">
+              <option value="">省</option>
+    			</select>
       	</div>
       	<!-- 选择省份-结束 -->
       	<!-- 选择城市 -->
-      	<div class="selectCity">
+      	<div class="selectCity" ng-options="item.id as item.text for item in citys">
 	      	<span>选择城市</span>
 	      	<div class="icon pull-right icon-right" style="float: right;"></div>
-			<select ng-model="selectedCity">
-				<option value="1">1</option>
-				<option value="1">1</option>
-				<option value="1">1</option>
-			</select>
+			    <select ng-model="selectedCity">
+				      <option value="">市</option>  
+			    </select>
       	</div>
       	<!-- 选择城市-结束 -->
       	<!-- 选择学校 -->
-      	<div class="selectSchool">
+      	<div class="selectSchool"  ng-options="item.id as item.text for item in districts">
 	      	<span>选择学校</span>
 	      	<div class="icon pull-right icon-right" style="float: right;"></div>
-			<select ng-model="selectedSchool">
-				<option value="1">1</option>
-				<option value="1">1</option>
-				<option value="1">1</option>
-			</select>
+    			<select ng-model="selectSchool">
+              <option value="">学校</option>
+    			</select>
       	</div>
       </div>
       	<!-- 选择学校-结束 -->
@@ -62,3 +57,4 @@
       <textarea name="详细地址" id="" cols="30" rows="5" style="border: 1px dashed #777;padding: 10px;" required>填写详细地址</textarea>
     </form>
   </div>
+ 

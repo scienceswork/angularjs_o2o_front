@@ -29,7 +29,7 @@
 		<!-- 弹窗按钮 -->
 		<div class="popover-menu pull-right">
   			<a href="#myPopover">
-      			Tap title
+      			分类
       			<span class="icon icon-caret"></span>
   			</a>
 		</div>
@@ -49,26 +49,13 @@
 	  </ul>
 	</div>
 	<!-- 弹窗菜单内容-结束 -->
-	<div class="card">
+	<!-- 内容 -->
+	<div class="card" style="background-color: #f4f4f4;">
 		<span id="item1mobile" class="control-content active">
-			<div class="storelist-card">
-				
-			</div>
-			<div class="storelist-card">
-				
-			</div>
-			<div class="storelist-card">
-				
-			</div>
-			<div class="storelist-card">
-				
-			</div>
-			<div class="storelist-card">
-				
-			</div>
-			<div class="storelist-card">
-				
-			</div>
+			<a href="#myModalexample"><span ng-include="'../templates/gk-storelist.html'" scope="" onload=""></span></a>
+			<span ng-include="'../templates/gk-storelist.html'" scope="" onload=""></span>
+			<span ng-include="'../templates/gk-storelist.html'" scope="" onload=""></span>
+			<span ng-include="'../templates/gk-storelist.html'" scope="" onload=""></span>
 		</span>
 		<span id="item2mobile" class="control-content">
 			
@@ -77,8 +64,24 @@
 			
 		</span>
 		<span id="item4mobile" class="control-content">
-			
+			<a href="#myModalexample" class="btn">Open modal</a>
 		</span>
-
 	</div>
+</div>
+	<!-- 模态框 -->
+		<!-- 遮罩层 -->
+	<!-- <div id="shade"></div> -->
+	<!-- 		<div class="mymodal card center">
+
+		</div> -->
+		<!-- 遮罩层-结束 -->
+	<!-- 模态框-结束 -->
+<div id="myModalexample" class="modal center">
+  <header class="bar bar-nav">
+    <a class="icon icon-close pull-right" href="#myModalexample"></a>
+    <h1 class="title">Modal</h1>
+  </header>
+  <div class="content">
+  	<img src="../images/yeoman.png" alt="">
+  </div>
 </div>

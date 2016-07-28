@@ -17,7 +17,6 @@
 
 !(function () {
   'use strict';
-
   var findModals = function (target) {
     var i;
     var modals = document.querySelectorAll('a');
@@ -44,7 +43,7 @@
       if (modal && modal.classList.contains('modal')) {
         modal.classList.toggle('active');
       }
-      event.preventDefault(); // prevents rewriting url (apps can still use hash values in url)
+      event.preventDefault();// prevents rewriting url (apps can still use hash values in url)
     }
   });
 }());

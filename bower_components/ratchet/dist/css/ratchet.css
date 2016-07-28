@@ -1008,10 +1008,10 @@ select {
 .popover {
   position: fixed;
   top: 110px;
-  right: 0px;
+  right: 15px;
   z-index: 20;
   display: none;
-  width: 280px;
+  width: 180px;
   margin-left: -140px;
   background-color: white;
   border-radius: 6px;
@@ -1085,10 +1085,10 @@ select {
 
 .modal {
   position: fixed;
-  top: 0;
+  /*top: 0;*/
   z-index: 11;
-  width: 100%;
-  min-height: 100%;
+  width: 300px;
+  min-height: 300px;
   overflow: hidden;
   background-color: #fff;
   opacity: 0;
@@ -1100,8 +1100,9 @@ select {
           transform: translate3d(0, 100%, 0);
 }
 .modal.active {
-  height: 100%;
-  opacity: 1;
+  height: 100px;
+  background-color: #fff;
+  opacity: 0.9;
   -webkit-transition: -webkit-transform .25s;
      -moz-transition:    -moz-transform .25s;
           transition:         transform .25s;

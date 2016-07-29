@@ -135,3 +135,12 @@ a:hover{cursor:pointer}
 .left{float:left;}
 .right{float:right;}
 .smallhead-pic{width:35px;height:35px;border-radius:50%;}
+.count{
+  width:20px;
+  height:20px;
+  text-align:center;
+  font-size:18px;
+  padding:0;margin:0;
+  &:hover{background-color:#fa6347;}
+}
+

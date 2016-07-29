@@ -19,3 +19,7 @@ angular
     'ngTouch',
     'ui.router'
   ])
+var app = angular.module('webFrontApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.count = 0;
+});

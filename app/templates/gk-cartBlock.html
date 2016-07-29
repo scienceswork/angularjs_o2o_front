@@ -19,17 +19,18 @@
         <p>单价：￥10.00</p>
         <p>库存；999</p>
       </div>
+      <div class="right cartCount">
+        <div ng-include="'../templates/gk-cartCount.html'" scope="" onload=""></div>
+      </div>
     </div>
   <!-- 中间内容-结束 -->
     <div class="partition-line"><!-- 分割线 --></div>
     <!-- 底部 -->
     <div class="cartBlock-footer">
       <div class="left cartPrice">
-        <span>合计：</span>
+        <span>小计：</span>
       </div>
-      <div class="right cartCount">
-        <div ng-include="'../templates/gk-cartCount.html'" scope="" onload=""></div>
-      </div>
+      <div class="right"><a href="#">删除</a></div>
     </div>
     <!-- 底部-结束 -->
   </div>

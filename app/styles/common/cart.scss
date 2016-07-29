@@ -43,14 +43,16 @@
 	.cartBlock-content-mes{
 	margin-left:10px;
 	}
+	.cartCount{
+		padding-top:70px;
+		padding-right:10px;
+	}
 }
 .cartBlock-footer{
 	width:100%;
 	height:20px;
 	margin-bottom:5px;
-	.cartCount{
-		padding-right:10px;
-	}
+	.right{padding-right:10px;}
 	.cartPrice{
 		padding-left:10px;
 		color:#fa6347;

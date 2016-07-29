@@ -1,0 +1,35 @@
+  <div class="card clear">
+  <!-- 头部 -->
+    <div class="cartBlock-header">
+      <div class="left">店名/商品名</div>
+      <div class="right checkbox">
+        <input type="checkbox" id="checkbox-1" />
+        <label for="checkbox-1"></label>  
+      </div>
+    </div>
+  <!-- 头部-结束 -->
+    <div class="partition-line"><!-- 分割线 --></div>
+  <!-- 中间内容 -->
+    <div class="cartBlock-content">
+      <div class="left">
+        <img src="../images/yeoman.png" alt="">
+      </div>
+      <div class="left cartBlock-content-mes">
+        <p>规格：111g/袋</p>
+        <p>单价：￥10.00</p>
+        <p>库存；999</p>
+      </div>
+    </div>
+  <!-- 中间内容-结束 -->
+    <div class="partition-line"><!-- 分割线 --></div>
+    <!-- 底部 -->
+    <div class="cartBlock-footer">
+      <div class="left cartPrice">
+        <span>合计：</span>
+      </div>
+      <div class="right cartCount">
+        <div ng-include="'../templates/gk-cartCount.html'" scope="" onload=""></div>
+      </div>
+    </div>
+    <!-- 底部-结束 -->
+  </div>

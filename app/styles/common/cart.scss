@@ -1,0 +1,59 @@
+.cartBlock-header{
+	height:15px;
+	padding:5px 10px;
+	input{
+		background-color:#fa6347;
+	}
+
+}
+.checkbox{
+	display:block; 
+	width:18px;
+	height:18px;
+	position:relative;
+	background-color:#000;
+	border-radius:25%;
+
+}
+#checkbox-1 {
+    display: none;
+}
+ 
+#checkbox-1 + label {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-5px;
+	margin-left:-5px;
+	display:block; 
+	width:10px;
+	height:10px;
+    background-color:#fff;
+    border-radius:25%;
+}
+ 
+#checkbox-1:checked + label {
+    background-color:#26ca28;
+}
+
+
+.cartBlock-content{width:100%;
+	height:90px;
+	overflow:hidden;
+	.cartBlock-content-mes{
+	margin-left:10px;
+	}
+}
+.cartBlock-footer{
+	width:100%;
+	height:20px;
+	margin-bottom:5px;
+	.cartCount{
+		padding-right:10px;
+	}
+	.cartPrice{
+		padding-left:10px;
+		color:#fa6347;
+	}
+}
+

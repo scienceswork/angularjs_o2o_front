@@ -58,4 +58,19 @@
 		color:#fa6347;
 	}
 }
-
+.cartFooter{
+	border:0;
+}
+.countAll{width:70%;padding-left:10px;span{color:#fa6347;font-size:19px;}}
+.countAll,.pay{
+	height:100%;
+	line-height:45px;
+}
+.pay{
+	width:30%;	
+	text-align:center;
+	background-color:#fa6347;
+	color:#fff;
+	padding:0;
+	border:0;
+}

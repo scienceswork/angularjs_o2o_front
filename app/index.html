@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>o2o校园线上超市</title>
+    <title>好友Store</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -17,40 +17,25 @@
     <!-- endbuild -->
   </head>
   <body ng-app="webFrontApp">
-
     <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+     <p class="browsehappy">您正在使用一个<strong>过时的</strong>浏览器. 请点击参加<a href="http://browsehappy.com/">浏览器下乡, 免费以旧换新活动</a>.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
 
-<!--     <div class="header">
-      <div ng-include="'./views/common/header.html'"></div>
-    </div>
- -->
- <!-- common-footer -->
-
-
     <div ng-include="'views/store.html'" class="wraper"></div>
 
-<!-- common-footer_______end -->
-<!--     <div class="content">
-      <div ui-view></div>
-    </div> -->
-
-
-
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+    <!-- Baidu Analytics -->
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?14a454b8fa5609e579b15aa34070ec4d";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

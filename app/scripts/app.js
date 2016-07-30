@@ -8,8 +8,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('webFrontApp', [
+angular.module('webFrontApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -19,7 +18,6 @@ angular
     'ngTouch',
     'ui.router'
   ])
-var app = angular.module('webFrontApp', []);
-app.controller('myCtrl', function($scope) {
-    $scope.count = 0;
-});
+/**
+ * Angularjs路由配置项目
+ */

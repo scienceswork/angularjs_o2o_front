@@ -8,13 +8,16 @@
   <h1 class="title">我的购物车</h1>
  </header>
 <!-- 头部-结束 -->
+<!-- 底部 -->
+<footer class="bar bar-tab clear cartFooter">
+   <div class="left countAll">合计：<span>￥</span></div>
+   <button class="right pay">结算</button>
+ </footer>
+<!-- 底部结束 -->
  <div class="content">
   <div ng-include="'../templates/gk-cartBlock.html'" scope="" onload=""></div>
   <div ng-include="'../templates/gk-cartBlock.html'" scope="" onload=""></div>
   <div ng-include="'../templates/gk-cartBlock.html'" scope="" onload=""></div>
   <div ng-include="'../templates/gk-cartBlock.html'" scope="" onload=""></div>
+   <div></div>
  </div>
- <footer class="bar bar-tab clear cartFooter">
-   <div class="left countAll">合计：<span>￥</span></div>
-   <button class="right pay">结算</button>
- </footer>

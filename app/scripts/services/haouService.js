@@ -5,5 +5,5 @@
 */
 angular.module('webFrontApp')
 .factory('haouService', ['$scope', function($scope){
-	 
+	
 }])

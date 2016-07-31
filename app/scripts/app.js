@@ -18,6 +18,6 @@ angular.module('webFrontApp', [
     'ngTouch',
     'ui.router'
   ])
-/**
- * Angularjs路由配置项目
- */
+.controller('MasterCtrl', ['$scope', function($scope){
+	
+}])

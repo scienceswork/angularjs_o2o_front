@@ -8,8 +8,9 @@ angular.module('webFrontApp')
     // 首页
     .state('home', {
     	url: '/',
-    	templateUrl: './views/main.html',
-    	controller: 'haouHomeCtrl'
+    	template: 'name:{{vm.name}}',
+    	controller: 'haouHomeCtrl',
+        controllerAs: 'vm'
     })
     // 个人中心
     .state('profile', {
@@ -84,8 +85,9 @@ angular.module('webFrontApp')
     // 登陆
     .state('login', {
     	url: '/login',
-    	template: '登陆{{name}}',
-        controller: 'loginCtrl'
+    	template: '登陆{{vm.name}}',
+        controller: 'loginCtrl',
+        controllerAs: 'vm'
     })
     // 注册
     .state('register', {

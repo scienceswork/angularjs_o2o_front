@@ -81,6 +81,16 @@ angular.module('webFrontApp')
     	url: '/address',
     	template: 'haou官网店收货地址详情'
     })
+    // 登陆
+    .state('login', {
+    	url: '/login',
+    	template: '登陆'
+    })
+    // 注册
+    .state('register', {
+    	url: '/register',
+    	template: '注册'
+    })
     // 关于好友Store
     .state('about', {
     	url: '/about',

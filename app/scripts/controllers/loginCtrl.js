@@ -5,5 +5,5 @@
 */
 angular.module('webFrontApp')
 .controller('loginCtrl', ['$scope', function($scope){
-	$scope.name = '谢泽辉';
+	$scope.name = '谢泽辉'; 
 }])

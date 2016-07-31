@@ -9,7 +9,7 @@ angular.module('webFrontApp')
     .state('home', {
     	url: '/',
     	templateUrl: './views/main.html',
-    	controller: ''
+    	controller: 'haouHomeCtrl'
     })
     // 个人中心
     .state('profile', {
@@ -84,7 +84,8 @@ angular.module('webFrontApp')
     // 登陆
     .state('login', {
     	url: '/login',
-    	template: '登陆'
+    	template: '登陆{{name}}',
+        controller: 'loginCtrl'
     })
     // 注册
     .state('register', {

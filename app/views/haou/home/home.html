@@ -1,0 +1,23 @@
+<html>
+ <head></head>
+ <body>
+  <footer class="footer text-center">
+   <div class="footer-block" ng-click="vm.goState(\'home\', 220)">
+    <img ng-show="vm.footerStatus == \'home\'" ng-src="{{root.dynamicUiDetails[0].onlineSelectedUrl}}" /> 
+    <img ng-show="vm.footerStatus != \'home\'" ng-src="{{root.dynamicUiDetails[0].onlineUnselectedUrl}}" />
+   </div>
+   <div class="footer-block" ng-click="vm.goState(\'stores\',18)">
+    <img ng-show="vm.footerStatus == \'stores\'" ng-src="{{root.dynamicUiDetails[1].onlineSelectedUrl}}" /> 
+    <img ng-show="vm.footerStatus !=\'stores\'" ng-src="{{root.dynamicUiDetails[1].onlineUnselectedUrl}}" />
+   </div>
+   <div class="footer-block" ng-click="vm.goState(\'orders\',19)">
+    <img ng-show="vm.footerStatus == \'orders\'" ng-src="{{root.dynamicUiDetails[2].onlineSelectedUrl}}" /> 
+    <img ng-show="vm.footerStatus != \'orders\'" ng-src="{{root.dynamicUiDetails[2].onlineUnselectedUrl}}" />
+   </div>
+   <div class="footer-block" ng-click="vm.goState(\'profile\',20)">
+    <img ng-show="vm.footerStatus == \'profile\'" ng-src="{{root.dynamicUiDetails[3].onlineSelectedUrl}}" /> 
+    <img ng-show="vm.footerStatus != \'profile\'" ng-src="{{root.dynamicUiDetails[3].onlineUnselectedUrl}}" />
+   </div>
+  </footer>
+ </body>
+</html>SuperServices

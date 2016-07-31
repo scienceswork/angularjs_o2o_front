@@ -1,8 +1,43 @@
 {
-	"status": "success",
-	"data": {
-		"id": 1,
-		"user": "谢泽辉",
-		"password": "zuowoziji"
-	}
+    "success": true,
+    "data": {
+        "id": 1,
+        "name": "默认UI（不要关闭）",
+        "version": 1804238737,
+        "hasUpdate": true,
+        "dynamicUiDetails": [
+            {
+                "id": 1,
+                "name": "优店",
+                "type": 0,
+                "sequence": 0,
+                "onlineSelectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/4a4b563a28511096b797cf72c6396b8f.png",
+                "onlineUnselectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/99e8c9c8ed409e8817bb94f54cf604b5.png"
+            },
+            {
+                "id": 2,
+                "name": "好友店",
+                "type": 0,
+                "sequence": 1,
+                "onlineSelectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/4d21246880c68bfdeb95e389a3d652ba.png",
+                "onlineUnselectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/23cce4e10723fbf1061140ea11996063.png"
+            },
+            {
+                "id": 3,
+                "name": "我的订单",
+                "type": 0,
+                "sequence": 2,
+                "onlineSelectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/d602d1bfee493d9b32ed0950b44f353c.png",
+                "onlineUnselectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/e505d0f567bf4af21f76d298d1e5f924.png"
+            },
+            {
+                "id": 4,
+                "name": "个人中心",
+                "type": 0,
+                "sequence": 3,
+                "onlineSelectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/b62b7f32e910039c1c81b484eb2a2606.png",
+                "onlineUnselectedUrl": "http://zhaime.qiniudn.com/uploads/item_cover/0d66587e1edcee55e21dbb13657e6de9.png"
+            }
+        ]
+    }
 }

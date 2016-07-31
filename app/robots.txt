@@ -1,4 +1,5 @@
-# robotstxt.org
+# robots.txt for haoustore.com
+# Stay hungry, stay foolish.
 
 User-agent: *
 Disallow:

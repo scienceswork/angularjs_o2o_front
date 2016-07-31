@@ -18,14 +18,21 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="webFrontApp">
+  <body ng-app="webFrontApp" ng-controller="MasterCtrl as root">
     <!--[if lte IE 8]>
      <p class="browsehappy">您正在使用一个<strong>过时的</strong>浏览器. 请点击参加<a href="http://browsehappy.com/">浏览器下乡, 免费以旧换新活动</a>.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
+<<<<<<< HEAD
     <div ui-view></div>
     <!-- <div ng-include="'views/return_state.html'" class="wraper"></div> -->
+=======
+    <div ui-view class="wrapper"></div>
+    <!-- <div ng-include="'views/store.html'" class="wraper"></div> -->
+    <!-- <div ui-view></div> -->
+    <!-- <div ng-include="'views/unbindPhone.html'" class="wraper"></div> -->
+>>>>>>> origin/master
 
     <!-- Baidu Analytics -->
     <script>
@@ -64,9 +71,13 @@
         <script src="scripts/services/haouHttpService.js"></script>
         <script src="scripts/services/homeService.js"></script>
         <!-- Service end -->
+        <!-- Controllers start -->
+        <script src="scripts/controllers/haouHomeCtrl.js"></script>
+        <script src="scripts/controllers/loginCtrl.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/home.js"></script>
+        <!-- Controller end -->
         <!-- <script src="scripts/swiper.min.js"></script> -->
         <!-- endbuild -->
 <!--         <script>

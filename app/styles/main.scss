@@ -144,4 +144,14 @@ a:hover{cursor:pointer}
   padding:0;margin:0;
   &:hover{background-color:#fa6347;}
 }
-
+.unbindPhone{ 
+  margin-top:10px; 
+  background-color:#fff;
+  label{
+    font-size:13px;
+    color:#777;
+  }
+  .input-row{
+    margin-bottom:8px;
+  }
+}

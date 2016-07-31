@@ -918,6 +918,7 @@ select {
   padding-left: 0;
   margin-bottom: 0;
   border: 0;
+  text-align: left;
 }
 
 .segmented-control {

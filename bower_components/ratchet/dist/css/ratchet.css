@@ -489,11 +489,13 @@ input[type="button"] {
   right: 0;
   left: 0;
   z-index: 10;
-  height: 36px;
+  height: 44px;
   padding-right: 10px;
   padding-left: 10px;
   background:#fff;
-  color: #fff;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -534,7 +536,7 @@ input[type="button"] {
   font-size: 17px;
   font-weight: 500;
   line-height: 44px;
-  color: #fff;
+  color: #000;
   text-align: center;
   white-space: nowrap;
 }
@@ -557,7 +559,7 @@ input[type="button"] {
   display: table-cell;
   width: 1%;
   height: 50px;
-  color: #777;
+  color: #999;
   text-align: center;
   vertical-align: middle;
 }
@@ -580,8 +582,6 @@ input[type="button"] {
   position: relative;
   top: 7px;
   z-index: 20;
-  color: #ccc;
-  opacity: 1;
   padding: 6px 12px 7px;
   margin-top: 0;
   font-weight: 400;
@@ -597,8 +597,8 @@ input[type="button"] {
   top: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 36px;
-  color: #fff;
+  line-height: 44px;
+  color: #428bca;
   border: 0;
 }
 .bar .btn-link:active, .bar .btn-link.active {
@@ -683,6 +683,7 @@ input[type="button"] {
 .badge-positive.badge-inverted {
   color: #5cb85c;
 }
+
 
 .badge-negative {
   color: #fff;
@@ -1474,19 +1475,3 @@ select {
   .loading i:nth-child(3){
     -webkit-animation:loading 1s linear 0.4s infinite;
   } 
-
-
-.bar-nav{
-  height: 36px;
-  background:rgba(0,0,0,0.15);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  color:#fff;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  margin:5px;
-}
-.bar-nav a{
-  color:#fff;
-  opacity: 1;
-}

@@ -8,14 +8,30 @@ angular.module('webFrontApp')
     // 首页
     .state('home', {
     	url: '/',
-    	template: 'name:{{vm.name}}',
+    	templateUrl: './views/haou/home/home.html',
     	controller: 'haouHomeCtrl',
+        controllerAs: 'vm'
+    })
+    // 好友店店铺列表
+    .state('stores', {
+        url: '/stores',
+        templateUrl: './views/stores/stores.html',
+        controller: 'storesCtrl',
+        controllerAs: 'vm'
+    })
+    // 订单列表
+    .state('orders', {
+        url: '/orders',
+        templateUrl: './views/orders/orders.html',
+        controller: 'ordersCtrl',
         controllerAs: 'vm'
     })
     // 个人中心
     .state('profile', {
     	url: '/profile',
-    	template: '这里是个人中心'
+    	templateUrl: './views/profile/profile.html',
+        controller: 'profileCtrl',
+        controllerAs: 'vm'
     })
     // 放置haou店铺相关的全部路由，嵌套
     .state('haou', {
@@ -25,7 +41,7 @@ angular.module('webFrontApp')
     // haou官方自营店列表
     .state('haou.stores', {
     	url: '/stores',
-    	template: 'haou官方自营店列表'
+    	templateUrl: 'haou官方自营店列表'
     })
     // haou官方自营店详细信息，传入参数店铺ID
     .state('haou.storeInfo', {
@@ -85,9 +101,14 @@ angular.module('webFrontApp')
     // 登陆
     .state('login', {
     	url: '/login',
-    	template: '登陆{{vm.name}}',
+    	templateUrl: './views/login/login.html',
         controller: 'loginCtrl',
         controllerAs: 'vm'
+    })
+    // 找回密码
+    .state('findPassword', {
+        url: '/findPassword',
+        templateUrl: './views/login/findPassword/findPassword.html'
     })
     // 注册
     .state('register', {

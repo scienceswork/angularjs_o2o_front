@@ -1,11 +1,11 @@
 /**
 * webFrontApp Module
 *
-* homeService
+* dynamicUIService动态UI导航获取
 */
 angular.module('webFrontApp')
-.factory('homeService', ['haouHttp', function(haouHttp){
-	function getHomeUI() {
+.factory('dynamicUIService', ['haouHttp', function(haouHttp){
+	function getDynamicUI() {
 		return haouHttp.get("").success(function(response) {
 			return response;
 		}).error(function(response) {
@@ -13,7 +13,7 @@ angular.module('webFrontApp')
 		});
 	}
 	var homeUI = {
-		'getHomeUI': getHomeUI
+		'getDynamicUI': getDynamicUI
 	};
 	return homeUI;
 }])

@@ -26,7 +26,7 @@ angular.module('webFrontApp', [
 	}
 	// 获取底部导航UI的远程json数据
 	function getDynamicUI() {
-		dynamicUIService.getDynamicUI().success(function(response) {
+		dynamicUIService.getDynamicUI().success(function(response) {	
 			S.dynamicUIDetails = response.data.dynamicUIDetails;
 		}).error(function(response) {
 			// 错误不进行任何操作

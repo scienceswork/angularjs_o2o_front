@@ -1,27 +1,28 @@
-<!-- <div class="banner-img super-home-banner">
- <header ng-hide="vm.header.headerHide" class="text-center">
-  <a class="header-block text-left">
-   <div class="msg-number" ng-click="vm.goMessageListPage()">
-    <span ng-show="vm.msgNum &gt; 0">{{vm.msgNum}}</span> 
-    <i class="sprite-super super16"></i>
-   </div>&nbsp;</a> 
-  <a class="header-block text-right">
-   <div class="msg-number" ng-click="vm.goCartPage()">
-    <span ng-show="vm.cartCount &gt; 0">{{vm.cartCount}}</span> 
-    <i class="iconfont icon-gouwuche"></i>
-   </div></a>
- </header>
-</div>
-<div class="super-home-view">
- <img class="first-banner-img" ng-src="{{vm.head.image}}" alt="" ng-click="vm.clickImage(vm.head)" />
- <div class="image-content">
-  <ul class="image-list">
-   <li ng-repeat="image in vm.images"><img ng-src="{{image.image}}" alt="" ng-click="vm.clickImage(image)" /></li>
-  </ul>
-  <div class="text-center text-gray" ng-click="vm.goSuperHome()">
-   <img class="btn-more-img" ng-click="vm.goSuperHome()" src="http://zhaime.qiniudn.com/uploads/btn_more_11.png" alt="" />
+<header class="bar bar-nav">
+  <button class="btn btn-link btn-nav pull-left">
+      <a class="icon icon-left-nav"></a>
+  </button>
+  <button class="btn btn-link btn-nav pull-right">
+      <a class="icon icon-compose"></a>
+    </button>
+  <h1 class="title">好友Store</h1>
+</header>
+<div ng-include="'./views/common/footer.html'" scope="" onload="" class="bar-tab"></div>
+
+
+<div class="content" style="background-color:#f4f4f4 ">
+  <div ng-include="'../templates/gk-slide.html'"></div>
+  <div ng-include="'../templates/gk-categoryLiIcon.html'" scope="" onload=""></div>
+  <div style="width: 100%;height: 5rem;overflow: hidden;background-color: #fff;line-height: 5rem;text-align: center;" id="swiper-container">
+        广告垂直轮播
   </div>
- </div>
-</div> -->
-<!-- 底部UI导航 -->
-<div ng-include="'./views/common/footer.html'"></div>
+  <div ng-include="'../templates/gk-goodlist-header.html'" style="margin-bottom: 0"></div>
+  
+  <div  ng-app="goodlist" ng-init="names=[
+                                          {name:'康师傅方便面',delprice:'6.20',price:'5.90'},
+                                          {name:'统一方便面',delprice:'6.30',price:'6.10'},
+                                          {name:'统一方便面',delprice:'6.30',price:'6.10'}]">
+    <div ng-include="'../templates/gk-goodlist.html'" ng-repeat="x in names"></div>
+  </div>
+</div>
+

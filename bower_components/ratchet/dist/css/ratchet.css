@@ -1478,8 +1478,7 @@ select {
 
 .bar-nav{
   height: 36px;
-  background-color: #000;
-  opacity:0.2;
+  background:rgba(0,0,0,0.15);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   color:#fff;

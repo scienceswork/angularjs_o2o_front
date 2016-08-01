@@ -34,6 +34,13 @@ angular.module('webFrontApp')
         controller: 'profileCtrl',
         controllerAs: 'vm'
     })
+    // 个人信息，传入参数待定
+    .state('setting', {
+        url: '/setting',
+        templateUrl: './views/profile/setting/setting.html',
+        controller: 'profileSettingCtrl',
+        controllerAs: 'vm'
+    })
     // 放置haou店铺相关的全部路由，嵌套
     .state('haou', {
     	url: '/haou',
@@ -160,11 +167,6 @@ angular.module('webFrontApp')
     .state('unbindPhone', {
     	url: '/unbindPhone?phone',
     	template: '这里是解绑手机'
-    })
-    // 个人信息，传入参数待定
-    .state('setting', {
-    	url: '/setting',
-    	template: '这里是个人信息'
     })
     // 我要开店
     .state('openStore', {

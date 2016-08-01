@@ -1,2 +1,62 @@
+
+<header class="bar bar-nav">
+  <button class="btn btn-link btn-nav pull-left">
+    <span class="icon icon-home"></span>
+  </button>
+  <button class="btn btn-link btn-nav pull-right" ng-click="vm.goState('setting')">
+    设置
+    <span class="icon icon-gear"></span>
+  </button>
+  <h1 class="title">个人中心</h1>
+</header>
+
+
+<div class="content">
+<div class="userhead-Pic">
+  <img src="../images/yeoman.png" alt="头像">
+  <p>账号名称</p>
+</div>
+<!-- 我的订单部分 -->
+<ul class="table-view">
+  <li class="table-view-cell">
+    <a class="navigate-right">
+      <span class="badge badge-inverted">查看全部订单</span>
+        我的订单
+    </a>
+  </li>
+  <li class="order-item">
+    <a href="#">
+      <span class="icon icon-home"></span>
+      <p>待付款</p>
+    </a>
+    <a href="#">
+      <span class="icon icon-home"></span>
+      <p>待发货</p>
+    </a>
+    <a href="#">
+      <span class="icon icon-home"></span>
+      <p>待收货</p>
+    </a>
+    <a href="#">
+      <span class="icon icon-home"></span>
+      <p>待评价</p>
+    </a>
+    <a href="#">
+      <span class="icon icon-home"></span>
+      <p>退货退款</p>
+    </a>
+  </li>
+</ul>
+<!-- 我的订单部分-结束 -->
+<div class="list" ng-app="" ng-init="text=['余额','积分','红包','地址','我要开店','密码','关于我们','帮助']">
+  <div class="list-block" ng-repeat="x in text">
+  <h1>--</h1>
+  {{x}}
+  </div>
+</div>
+</div>
+
+
+
 <!-- 底部UI导航 -->
 <div ng-include="'./views/common/footer.html'"></div>

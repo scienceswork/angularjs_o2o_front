@@ -1,18 +1,30 @@
 $goodlist-Height:6rem;
 $goodlist-backgroudColor:#fff;
-$price-color:#31bd80;
-
-
-
-
-
-
 .goodlist{position:relative;height:$goodlist-Height;width:100%;margin-bottom:0.3rem;background-color:$goodlist-backgroudColor;padding:0.5rem;}
 .goodsPic{display:block;width:5rem;height:5rem;position:absolute;}
 .goodsPic img{width:5rem;height:5rem;vertical-align: top;}
 .goodsInfor{height:5rem;position:absolute;left:6rem;}
 .goodsInfor h2{font-size:16px;}
 .goodsInfor p{margin:0;padding:0;}
-.price{color:$price-color;}
 .goodsInfor p del{color:grey;}
 .addToCart{position:absolute;right:1rem;top:2rem;}
+.sift_nav{
+	padding:0;
+	margin:0;
+	font-size:0;
+	height:30px;
+	li{	
+		float:left;
+		padding:0;
+		margin:0;
+		display:inline-block;
+		width:33%;
+		height:30px;
+		background:#fafafa;
+		list-style:none;
+		text-align:center;
+		font-size:12px;
+		line-height:30px;
+	}
+}
+

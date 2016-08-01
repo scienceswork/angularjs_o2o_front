@@ -124,6 +124,7 @@ a:hover{cursor:pointer}
   background-color:#e8e6e6;
   border:0;
   margin:10px 0;
+  box-shadow:0px 1px 1px 0 #a5a5a5 inset;
 }
 .center{
   position: absolute;
@@ -157,3 +158,5 @@ a:hover{cursor:pointer}
     margin-bottom:8px;
   }
 }
+.price{color:#fa6347;font-size:18px;font-weight: 700;}
+.bage-checked{background-color:#fa6347;color:#fff;}

@@ -1,0 +1,23 @@
+.product_info{
+	background: #fff;
+    padding: 10px 20px;
+	h6{
+		font-size:17px;
+		color:#777;
+	}
+	.content-line>span{
+		font-size:13px;
+		color:#a5a5a5;
+		padding-right:20px;
+	}
+}
+.product_info_img{
+	width:100%;
+	img{
+		width:100%;
+	}
+}
+.product_Footer{
+	.addCart{width: 50%;background-color:#FFCC26;height:100%;line-height:47px;color:#fff;text-align:center;}
+	.pay{width: 50%;}
+}

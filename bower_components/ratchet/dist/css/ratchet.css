@@ -489,12 +489,11 @@ input[type="button"] {
   right: 0;
   left: 0;
   z-index: 10;
-  height: 44px;
+  height: 36px;
   padding-right: 10px;
   padding-left: 10px;
-  background-color:#fff;
-  border-bottom: 1px solid #ddd;
-
+  background:#fff;
+  color: #fff;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -535,7 +534,7 @@ input[type="button"] {
   font-size: 17px;
   font-weight: 500;
   line-height: 44px;
-  color: #000;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
 }
@@ -558,12 +557,12 @@ input[type="button"] {
   display: table-cell;
   width: 1%;
   height: 50px;
-  color: #929292;
+  color: #777;
   text-align: center;
   vertical-align: middle;
 }
 .bar-tab .tab-item.active, .bar-tab .tab-item:active {
-  color: #428bca;
+  color: #ff512f;
 }
 .bar-tab .tab-item .icon {
   top: 3px;
@@ -581,6 +580,8 @@ input[type="button"] {
   position: relative;
   top: 7px;
   z-index: 20;
+  color: #ccc;
+  opacity: 1;
   padding: 6px 12px 7px;
   margin-top: 0;
   font-weight: 400;
@@ -596,8 +597,8 @@ input[type="button"] {
   top: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 44px;
-  color: #428bca;
+  line-height: 36px;
+  color: #fff;
   border: 0;
 }
 .bar .btn-link:active, .bar .btn-link.active {
@@ -1473,3 +1474,20 @@ select {
   .loading i:nth-child(3){
     -webkit-animation:loading 1s linear 0.4s infinite;
   } 
+
+
+.bar-nav{
+  height: 36px;
+  background-color: #000;
+  opacity:0.2;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color:#fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin:5px;
+}
+.bar-nav a{
+  color:#fff;
+  opacity: 1;
+}

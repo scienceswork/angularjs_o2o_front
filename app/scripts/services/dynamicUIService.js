@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Module
 *
@@ -16,4 +17,4 @@ angular.module('webFrontApp')
 		'getDynamicUI': getDynamicUI
 	};
 	return homeUI;
-}])
+}]);

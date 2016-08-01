@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Module
 *
@@ -6,4 +7,4 @@
 angular.module('webFrontApp')
 .factory('haouService', ['$scope', function($scope){
 	
-}])
+}]);

@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Module
 *
@@ -19,4 +20,4 @@ angular.module('webFrontApp')
 		'get': get
 	};
 	return haouHttp;
-}])
+}]);

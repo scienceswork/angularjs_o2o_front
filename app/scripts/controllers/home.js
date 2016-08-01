@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Module
 *
@@ -8,4 +9,4 @@ angular.module('webFrontApp')
 	console.log(homeService.getHomeUI().success(function(response) {
 		$scope.name = response.status;
 	}));
-}])
+}]);

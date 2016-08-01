@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Module
 *
@@ -12,4 +13,4 @@ angular.module('webFrontApp')
 	var S = this;
 	S.name = 'haoustore首页控制器';
 	init(); // 初始化
-}])
+}]);

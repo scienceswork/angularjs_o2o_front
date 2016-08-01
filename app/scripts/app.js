@@ -29,4 +29,4 @@ angular.module('webFrontApp', [
 	// var S = this;
 	// S.name = '谢泽辉';
 	// init();
-}])
+}]);

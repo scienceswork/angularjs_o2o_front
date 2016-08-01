@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Module
 *
@@ -13,4 +14,4 @@ angular.module('webFrontApp')
 	var S = this;
 	S.name = '谢泽辉';
 	S.login = login;
-}])
+}]);

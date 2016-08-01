@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Module
 *
@@ -12,4 +13,4 @@ angular.module('webFrontApp')
 	// 控制器别名写法
 	var S = this;
 	init(); // 初始化
-}])
+}]);

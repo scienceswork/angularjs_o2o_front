@@ -1,3 +1,4 @@
+'use strict';
 /**
 * webFrontApp Ui-route Module
 * Angularjs 路由配置项
@@ -179,7 +180,7 @@ angular.module('webFrontApp')
     });
     // 如果没有匹配到路由则条转到首页，无404页面，错误页面重定向
     $urlRouterProvider.otherwise('/');
-}])
+}]);
 
 
 

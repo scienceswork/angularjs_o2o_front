@@ -1,0 +1,39 @@
+$width:100%;
+$background:#fff;
+@mixin state_common($height){
+	height:$height;
+	line-height:$height;
+	margin-top:10px;
+	background-color:$background;
+	width:$width;
+}
+
+.state{	
+	text-align:center;
+	@include state_common(80px);
+	span:nth-child(1){
+		display:inline-block;
+		width:30px;
+		height:29px;
+		border:2px solid green;
+		border-radius:50%;
+		color:green;
+	}
+	span:last-child{
+		font-size:19px;
+	}
+}
+.state_order p{
+	@include state_common(50px);
+	padding-left:10px;
+	span{
+		font-size:18px;
+		color:#fa6347;
+	}
+}
+.btn_two{
+	text-align:center;
+	&>button{
+	width:150px;
+	}
+}

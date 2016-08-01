@@ -1,17 +1,17 @@
 <nav class="bar bar-tab">
-  <a class="tab-item" ng-class="{true:'active',false:''}[vm.isHome]" ui-sref="home">
+  <a class="tab-item" ng-class="{true:'active',false:''}[vm.isHome]" ng-click="vm.goState('home')">
     <span class="icon icon-home"></span>
     <span class="tab-label">优店</span>
   </a>
-  <a class="tab-item" ng-class="{true:'active',false:''}[vm.isStores]" ui-sref="stores">
+  <a class="tab-item" ng-class="{true:'active',false:''}[vm.isStores]" ng-click="vm.goState('stores')">
     <span class="icon icon-person"></span>
     <span class="tab-label">好友店</span>
   </a>
-  <a class="tab-item" ng-class="{true:'active',false:''}[vm.isOrders]" ui-sref="orders">
+  <a class="tab-item" ng-class="{true:'active',false:''}[vm.isOrders]" ng-click="vm.goState('orders')" >
     <span class="icon icon-star-filled"></span>
     <span class="tab-label">我的订单</span>
   </a>
-  <a class="tab-item" ng-class="{true:'active',false:''}[vm.ifProfile]" ui-sref="profile">
+  <a class="tab-item" ng-class="{true:'active',false:''}[vm.ifProfile]" ng-click="vm.goState('profile')">
     <span class="icon icon-gear"></span>
     <span class="tab-label">个人中心</span>
   </a>

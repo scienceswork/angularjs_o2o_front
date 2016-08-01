@@ -1,0 +1,1 @@
+固定的底部要放在content之前，且外部引入的footer要加class="bar-tab";

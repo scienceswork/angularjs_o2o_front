@@ -26,14 +26,21 @@ $list-background:#fff;
 }
 .list-block:nth-child(3n){border-right: 0;}
 .order-item{
-    padding:5px 10px;
+    padding:5px 0px;
     text-align: center;
+    height:75px;
+    display:block;
+    line-height:1.5;
     a{
     padding-top:10px;
     color: #4a4a4a;
     display: inline-block;
     font-size: 11px;
-    position: relative;
-    width: 18%;
+    float:left;
+    width: 20%;
+    p{
+        font-size:11px;
+        padding-top:2px;
+    }
     }
 }

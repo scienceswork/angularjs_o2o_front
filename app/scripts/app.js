@@ -17,7 +17,8 @@ angular.module('webFrontApp', [
     'ngSanitize',
     'ngTouch',
     'ui.router',
-    'ngStorage'
+    'ngStorage',
+    'angular-oauth2'
   ])
 // 首页控制器
 .controller('MasterCtrl', ['$scope', 'haouHttp', 'dynamicUIService', function($scope, haouHttp, dynamicUIService) {

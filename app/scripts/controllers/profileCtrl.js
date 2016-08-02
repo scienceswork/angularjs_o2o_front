@@ -9,6 +9,7 @@ angular.module('webFrontApp')
 	// 控制器初始化函数
 	function init() {
 		S.ifProfile = true; // 个人中心导航标志
+		S.defaultGravatar = 'http://localhost:9000/images/yeoman.png'; // 没有登录时候的默认头像
 	}
 	// 按钮点击跳转
 	function goState(state) {

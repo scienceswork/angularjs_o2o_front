@@ -1,18 +1,63 @@
-<footer class="footer text-center">
- <div class="footer-block" ng-click="vm.goState(\'home\', 220)">
-  <img ng-show="vm.footerStatus == \'home\'" ng-src="{{root.dynamicUiDetails[0].onlineSelectedUrl}}" /> 
-  <img ng-show="vm.footerStatus != \'home\'" ng-src="{{root.dynamicUiDetails[0].onlineUnselectedUrl}}" />
- </div>
- <div class="footer-block" ng-click="vm.goState(\'stores\',18)">
-  <img ng-show="vm.footerStatus == \'stores\'" ng-src="{{root.dynamicUiDetails[1].onlineSelectedUrl}}" /> 
-  <img ng-show="vm.footerStatus !=\'stores\'" ng-src="{{root.dynamicUiDetails[1].onlineUnselectedUrl}}" />
- </div>
- <div class="footer-block" ng-click="vm.goState(\'orders\',19)">
-  <img ng-show="vm.footerStatus == \'orders\'" ng-src="{{root.dynamicUiDetails[2].onlineSelectedUrl}}" /> 
-  <img ng-show="vm.footerStatus != \'orders\'" ng-src="{{root.dynamicUiDetails[2].onlineUnselectedUrl}}" />
- </div>
- <div class="footer-block" ng-click="vm.goState(\'profile\',20)">
-  <img ng-show="vm.footerStatus == \'profile\'" ng-src="{{root.dynamicUiDetails[3].onlineSelectedUrl}}" /> 
-  <img ng-show="vm.footerStatus != \'profile\'" ng-src="{{root.dynamicUiDetails[3].onlineUnselectedUrl}}" />
- </div>
-</footer>
+<html>
+ <head></head>
+ <body>
+  <div class="text-center login-wrapper">
+   <div class="profile-head">
+    <div class="header">
+     <div class="sprite iconfont icon-xiaoxi"></div>
+     <div ng-show="vm.isLogin" class="right spriteprofile sprite-profileui1" ng-click="vm.header.rightEvent()"></div>
+    </div>
+    <i class="sprite sprite-26" ng-show="!vm.isLogin || !vm.profile.gravatar"></i> 
+    <img ng-show="vm.isLogin &amp;&amp; vm.profile.gravatar" ng-src="{{vm.profile.gravatar &amp;&amp; vm.profile.gravatar !== \'null\' ? vm.profile.gravatar : vm.defaultGravatar}}" />
+    <h2 ng-show="vm.profile.name" class="text-center">{{vm.profile.name}}</h2>
+    <div ng-show="!vm.profile.name" class="text-center">
+     <h2><a ng-click="vm.goState(\'login\',58)">登录/注册</a></h2>
+     <p>注册送豪礼，登录有惊喜</p>
+    </div>
+   </div>
+  </div>
+  <div class="list-line profile-line">
+   <div class="profile-label text-center">
+    <h1 ng-if="vm.isLogin" ng-click="vm.goState(\'wallet\',59,{\'amount\':vm.profile.balances})">￥{{vm.profile.balances}}</h1>
+    <h1 ng-if="!vm.isLogin">— —</h1>
+    <p>我的余额</p>
+   </div>
+   <div class="profile-label text-center">
+    <h1 ng-if="vm.isLogin" ng-click="vm.goState(\'bonus\',60)">{{vm.profile.bonusCount}}</h1>
+    <h1 ng-if="!vm.isLogin">— —</h1>
+    <p>我的红包</p>
+   </div>
+   <div class="profile-label text-center">
+    <h1 ng-if="vm.profile.credits" ng-click="vm.goState(\'pointsMall\',100)">{{vm.profile.credits}}</h1>
+    <h1 ng-if="!vm.profile.credits">— —</h1>
+    <p>我的积分</p>
+   </div>
+   <div class="profile-label text-center" ng-click="vm.goOpenStore()">
+    <h1><span class="spriteprofile sprite-profileui2"></span></h1>
+    <p>开店赚钱</p>
+   </div>
+   <div class="profile-label text-center" ng-click="vm.goState(\'address\',63)">
+    <h1><span class="spriteprofile sprite-profileui4"></span></h1>
+    <p>地址管理</p>
+   </div>
+   <div class="profile-label text-center" ng-click="vm.ifbind()">
+    <h1><span class="spriteprofile sprite-profileui5"></span></h1>
+    <p ng-show="!vm.profile.phone">绑定手机</p>
+    <p ng-show="vm.profile.phone">解绑手机</p>
+   </div>
+   <div class="profile-label text-center" ng-click="vm.ifbind(\'password\')">
+    <h1><span class="spriteprofile sprite-profileui6"></span></h1>
+    <p>修改密码</p>
+   </div>
+   <div class="profile-label text-center" ng-click="vm.goState(\'help\')">
+    <h1><span class="spriteprofile sprite-profileui7"></span></h1>
+    <p>帮助中心</p>
+   </div>
+   <div class="profile-label text-center" ng-click="vm.goState(\'about\')">
+    <h1><span class="spriteprofile sprite-profileui8"></span></h1>
+    <p>关于宅米</p>
+   </div>
+  </div>
+  <div ng-include="\'app/views/common/footer.html\'"></div>
+ </body>
+</html>

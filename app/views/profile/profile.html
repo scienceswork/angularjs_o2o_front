@@ -20,7 +20,7 @@
 <div class="userhead-Pic">
   <img src="{{ vm.defaultGravatar }}" alt="头像">
   <p>谢泽辉</p>
-  <a>登录/注册</a>
+  <a ng-click="vm.goState('login')">登录/注册</a>
 </div>
 <!-- 我的订单部分 -->
 <ul class="table-view">
@@ -56,15 +56,16 @@
 <!-- 我的订单部分-结束 -->
 <div class="list">
   <div class="list-block">
-    <h1>--</h1>
+    <h1 ng-if="!vm.isLogin">--</h1>
     余额
   </div>
   <div class="list-block">
-    <h1>--</h1>
+    <h1 ng-if="vm.profile.credits" ng-bind="vm.profile.credits"></h1>
+    <h1 ng-if="!vm.profile.credits">--</h1>
     积分
   </div>
   <div class="list-block">
-    <h1>--</h1>
+    <h1 ng-if="!vm.isLogin">--</h1>
     红包
   </div>
   <div class="list-block">
@@ -75,11 +76,11 @@
     <h1>--</h1>
     我要开店
   </div>
-  <div class="list-block">
+  <div class="list-block" ng-click="vm.ifbind('password')">
     <h1>--</h1>
     密码管理
   </div>
-  <div class="list-block">
+  <div class="list-block" ng-click="vm.ifbind('')">
     <h1>--</h1>
     解绑手机
   </div>

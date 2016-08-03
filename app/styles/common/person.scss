@@ -4,7 +4,8 @@ $list-background:#fff;
 .list{
 	background:$list-background;
     font-size: 0;
-    padding: 5px;
+    line-height:0;
+    padding:0 5px 30px 5px;
 }
 .list-block{
 	border-bottom: 1px solid #e8e6e6;

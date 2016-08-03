@@ -17,7 +17,8 @@ angular.module('webFrontApp')
 	// 接口API地址http://m.haoustore.com/api/
 	var apiUrl = 'http://localhost:9000/';
 	var haouHttp = {
-		'get': get
+		'get': get,
+		'post': post
 	};
 	return haouHttp;
 }]);

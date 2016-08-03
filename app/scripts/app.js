@@ -18,7 +18,8 @@ angular.module('webFrontApp', [
     'ngTouch',
     'ui.router',
     'ngStorage',
-    'angular-oauth2'
+    'angular-oauth2',
+    'ngDialog'
   ])
 // 首页控制器
 .controller('MasterCtrl', ['$scope', 'haouHttp', 'dynamicUIService', function($scope, haouHttp, dynamicUIService) {

@@ -8,7 +8,7 @@
   <ul class="table-view">
     <li class="table-view-cell media">
       <a class="navigate-right">
-        <img class="media-object pull-right smallhead-pic" src="../images/yeoman.png" alt="头像">
+        <img class="media-object pull-right smallhead-pic" src="{{ vm.img }}" alt="头像">
         <div class="media-body">
          	<span class="small-px">用户头像</span>
         </div>
@@ -16,7 +16,7 @@
     </li>
     <li class="table-view-cell media">
       <a class="navigate-right">
-        <p class="pull-right">150*******</p>
+        <p class="pull-right">{{ vm.name }}</p>
         <div class="media-body">
          	<span class="small-px">名称</span>
         </div>
@@ -24,8 +24,8 @@
     </li>
     <li class="table-view-divider small-px" style="border:0;">注册手机</li>
     <li class="table-view-cell media">
-      <a class="navigate-right">
-        <p class="pull-right">150*******</p>
+      <a class="navigate-right" ui-sref="unbindPhone({'phone':vm.phone})">
+        <p class="pull-right">{{ vm.phone }}</p>
         <div class="media-body">
          	<span class="small-px">您绑定的手机号码</span>
         </div>

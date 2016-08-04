@@ -6,6 +6,13 @@
 angular.module('webFrontApp')
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
     $stateProvider
+    // 测试页面
+    .state('test', {
+        url: '/test',
+        templateUrl: './views/test.html',
+        controller: 'testCtrl',
+        controllerAs: 'vm'
+    })
     // 首页
     .state('home', {
     	url: '/',
@@ -36,7 +43,7 @@ angular.module('webFrontApp')
     })
     // 个人信息，传入参数待定
     .state('setting', {
-        url: '/setting',
+        url: '/setting?img&name&phone&password',
         templateUrl: './views/profile/setting/setting.html',
         controller: 'profileSettingCtrl',
         controllerAs: 'vm'

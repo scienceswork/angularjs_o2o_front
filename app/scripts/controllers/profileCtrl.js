@@ -10,16 +10,38 @@ angular.module('webFrontApp')
 	function init() {
 		S.footerStatus = 'profile';
 		S.profile = {};
-		S.profile.phone = '15113992194';
+		S.profile.phone = '15113992194';// 测试
+		S.profile.name = '谢泽辉';
 		S.ifProfile = true; // 个人中心导航标志
 		S.profile.balances = '0.00'; // 默认余额为0
 		S.isLogin = !!$localStorage.token; // 是否登陆
-		S.isLogin = false;
+		S.isLogin = true;
 		S.goState = goState; // 页面跳转
 		S.ifbind = ifbind; // 解绑手机、绑定手机、修改密码
 		S.defaultGravatar = 'http://localhost:9000/images/yeoman.png'; // 没有登录时候的默认头像
 		delete $localStorage.name;
 		getCredits();// 获取积分
+		S.header = { // 头部对象，放置点击个人信息跳转的页面
+			'rightEvent': function() {
+				// 右边个人信息按钮点击事件
+				if (S.isLogin) {
+					// 如果登录的话，显示个人信息 
+					goState('setting', {
+						// 头像信息
+						'img': S.profile.gravatar && 'null' !== S.profile.gravatar ? S.profile.gravatar : S.defaultGravatar,
+						// 名字信息
+						'name': S.profile.name,
+						// 电话信息
+						'phone': S.profile.phone,
+						// 是否验证密码
+						'password': S.profile.password
+					});
+				} else {
+					// 未登陆跳转到登陆页面
+					goState('login');
+				}
+			}
+		}
 	}
 	// 按钮点击跳转
 	function goState(state, params) {

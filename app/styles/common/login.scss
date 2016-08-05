@@ -11,7 +11,7 @@ html{height: 100%;}
   background:#CCFFCC;
 }
 
-.login-form{input{margin:0 34px 0 34px;width:80%;}}
+.login-form{input{margin:0 34px 0 34px;width:80%;padding-left: 0;font-size:14px;}}
 .input-group{background-color:$login-background;padding: 1rem;}
 .btn-valid{    background: 0 0;
   border-left: 1px solid #fff;

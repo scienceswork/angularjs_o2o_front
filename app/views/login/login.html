@@ -3,27 +3,40 @@
     <button class="btn btn-link btn-nav pull-left" ng-click="vm.goBack()">
       <span class="icon icon-left-nav"></span>
     </button>
-<!--     <button class="btn btn-link btn-nav pull-right">
-      about
-      <span class="icon icon-right-nav"></span>
-    </button> -->
-    <h1 class="title">好友Store-登陆</h1>
+    <button class="btn btn-link btn-nav pull-right" ng-click="vm.goState('register')" style="font-size:14px;color:red;">
+      立即注册
+      <!-- <span class="icon icon-right-nav"></span> -->
+    </button>
+    <h1 class="title">登陆</h1>
   </header>
   <div class="logo">
     <img src="./images/yeoman.png" alt="logo">
   </div>
   <div class="login-form">
-    <form class="input-group">
-      <input type="text" ng-model="vm.data.phone" placeholder="请输入手机号码或用户名">
-      <input type="password" ng-model="vm.data.password" placeholder="请输入密码">
+    <!-- 帐号密码登录 -->
+    <form class="input-group" name="loginForm" ng-if="!vm.isLoginByPhone">
+      <input type="text" ng-model="vm.data.phone" placeholder="用户名/手机" required="">
+      <input type="password" ng-model="vm.data.password" placeholder="密码(至少6位任意字符组合)" required="" minlength="6" maxlength="16">
       <div class="login-input">
-        <button class="btn btn-block btn-login" ng-click="vm.login(vm.data)">登录</button>
+        <button class="btn btn-block btn-login" ng-click="vm.login(vm.data)" ng-disabled="loginForm.$invalid">登录</button>
         <p style="clear: both">
-          <a ui-sref="findPassword" style="float: left" ng-click="vm.goState('findPassword')">找回密码</a>
-          <a href="#" style="float: right" ng-click="vm.goState('register')">注册账户</a>
+          <a style="float: left;" ng-click="vm.isLoginByPhone = true">验证码登录</a>
+          <a ui-sref="findPassword" style="float: right" ng-click="vm.goState('findPassword')">忘记密码?</a>
         </p>
       </div>
     </form>
+    <!-- 手机验证码登录 -->
+    <form class="input-group" name="loginPhoneForm" ng-if="vm.isLoginByPhone">
+      <input type="text" ng-model="vm.phoneData.phone" placeholder="输入手机号">
+      <input type="text" ng-model="vm.phoneData.validCode" placeholder="输入验证码" minlength="11" maxlength="11" required="">
+      <div class="login-input">
+        <button class="btn btn-block btn-login" ng-click="vm.login(vm.data)" ng-disabled="loginPhoneForm.$invalid">验证码登录</button>
+        <p style="clear: both">
+          <a style="float:left;" ng-click="vm.isLoginByPhone = false">帐号密码登录</a>
+          <a ui-sref="findPassword" style="float:right;" ng-click="vm.goState('findPassword')">忘记密码?</a>
+        </p>
+      </div>
+    </form>    
   </div>
 </div>
 

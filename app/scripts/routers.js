@@ -9,49 +9,52 @@ angular.module('webFrontApp')
     // 测试页面
     .state('test', {
         url: '/test',
-        templateUrl: './views/test.html',
+        templateUrl: 'views/test.html',
         controller: 'testCtrl',
         controllerAs: 'vm'
     })
     // 首页
     .state('home', {
     	url: '/',
-    	templateUrl: './views/haou/home/home.html',
+    	templateUrl: 'views/haou/home/home.html',
     	controller: 'haouHomeCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        data: {
+             permission: "HAOU.HOME"
+        }
     })
     // 好友店店铺列表
     .state('stores', {
         url: '/stores',
-        templateUrl: './views/stores/stores.html',
+        templateUrl: 'views/stores/stores.html',
         controller: 'storesCtrl',
         controllerAs: 'vm'
     })
     // 订单列表
     .state('orders', {
         url: '/orders',
-        templateUrl: './views/orders/orders.html',
+        templateUrl: 'views/orders/orders.html',
         controller: 'ordersCtrl',
         controllerAs: 'vm'
     })
     // 个人中心
     .state('profile', {
     	url: '/profile',
-    	templateUrl: './views/profile/profile.html',
+    	templateUrl: 'views/profile/profile.html',
         controller: 'profileCtrl',
         controllerAs: 'vm'
     })
     // 个人信息，传入参数待定
     .state('setting', {
         url: '/setting?img&name&phone&password',
-        templateUrl: './views/profile/setting/setting.html',
+        templateUrl: 'views/profile/setting/setting.html',
         controller: 'profileSettingCtrl',
         controllerAs: 'vm'
     })
     // 解绑手机，传入参数手机phone
     .state('unbindPhone', {
         url: '/unbindPhone?phone',
-        templateUrl: './views/profile/unbindPhone/unbindPhone.html',
+        templateUrl: 'views/profile/unbindPhone/unbindPhone.html',
         controller: 'profileUnbindPhoneCtrl',
         controllerAs: 'vm'
     })
@@ -123,14 +126,14 @@ angular.module('webFrontApp')
     // 登陆
     .state('login', {
     	url: '/login',
-    	templateUrl: './views/login/login.html',
+    	templateUrl: 'views/login/login.html',
         controller: 'loginCtrl',
         controllerAs: 'vm'
     })
     // 找回密码
     .state('findPassword', {
         url: '/findPassword',
-        templateUrl: './views/login/findPassword/findPassword.html'
+        templateUrl: 'views/login/findPassword/findPassword.html'
     })
     // 注册
     .state('register', {
@@ -185,7 +188,7 @@ angular.module('webFrontApp')
     // 测试条转页面
     .state('h', {
         url: '/h',
-        templateUrl: './views/about.html',
+        templateUrl: 'views/about.html',
         controller: 'homeCtrl',
         controllerAs: 'vm'
     });

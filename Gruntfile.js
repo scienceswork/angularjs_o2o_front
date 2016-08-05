@@ -376,7 +376,7 @@ module.exports = function (grunt) {
           usemin: 'scripts/scripts.js'
         },
         cwd: '<%= yeoman.app %>',
-        src: 'views/{,*/}*.html',
+        src: '{views,templates}/{,*/}{,*/}*.html',
         dest: '.tmp/templateCache.js'
       }
     },
@@ -394,12 +394,12 @@ module.exports = function (grunt) {
       }
     },
 
-    // Replace Google CDN references
-    cdnify: {
-      dist: {
-        html: ['<%= yeoman.dist %>/*.html']
-      }
-    },
+    // Replace Google CDN references暂时关闭
+    // cdnify: {
+    //   dist: {
+    //     html: ['<%= yeoman.dist %>/*.html']
+    //   }
+    // },
 
     // Copies remaining files to places other tasks can use
     copy: {
@@ -499,7 +499,7 @@ module.exports = function (grunt) {
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
+    // 'cdnify',
     'cssmin',
     'uglify',
     'filerev',

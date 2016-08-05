@@ -1,5 +1,5 @@
 
-<div ng-include="'./views/common/footer.html'" scope="" onload="" class="bar-tab"></div>
+<div ng-include="'views/common/footer.html'" scope="" onload="" class="bar-tab"></div>
 
 
 <div class="content" style="background-color:#f4f4f4 ">
@@ -7,18 +7,18 @@
   <input type="search">
   <span class="icon icon-search"></span>
 </header>
-  <div ng-include="'../templates/gk-slide.html'"></div>
-  <div ng-include="'../templates/gk-categoryLiIcon.html'" scope="" onload=""></div>
+  <div ng-include="'templates/gk-slide.html'"></div>
+  <div ng-include="'templates/gk-categoryLiIcon.html'" scope="" onload=""></div>
   <div style="width: 100%;height: 5rem;overflow: hidden;background-color: #fff;line-height: 5rem;text-align: center;" id="swiper-container">
         广告垂直轮播
   </div>
-  <div ng-include="'../templates/gk-goodlist-header.html'" style="margin-bottom: 0"></div>
+  <div ng-include="'templates/gk-goodlist-header.html'" style="margin-bottom: 0"></div>
   
   <div  ng-app="goodlist" ng-init="names=[
                                           {name:'康师傅方便面',delprice:'6.20',price:'5.90'},
                                           {name:'统一方便面',delprice:'6.30',price:'6.10'},
                                           {name:'统一方便面',delprice:'6.30',price:'6.10'}]">
-    <div ng-include="'../templates/gk-goodlist.html'" ng-repeat="x in names"></div>
+    <div ng-include="'templates/gk-goodlist.html'" ng-repeat="x in names"></div>
   </div>
 </div>
 

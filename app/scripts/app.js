@@ -34,6 +34,7 @@ angular.module('webFrontApp', [
 		}).error(function(response) {
 			// 错误不进行任何操作
 			console.log('error');
+			alert(response.error);
 		});
 	}
 	// 使用控制器别名的写法
@@ -41,7 +42,6 @@ angular.module('webFrontApp', [
 	S.name = '谢泽辉';
 	init();
 }]);
-
 
 
 

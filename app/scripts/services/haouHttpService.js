@@ -14,6 +14,10 @@ angular.module('webFrontApp')
 	function post(option, data) {
 		return $http.post("" + apiUrl + option, data);
 	}
+	// put方法
+	function put(option, data) {
+		return $http.put("" + apiUrl + option, data);
+	}
 	// 接口API地址http://m.haoustore.com/api/
 	var apiUrl = 'http://localhost:9000/';
 	var haouHttp = {

@@ -88,5 +88,5 @@ angular.module('webFrontApp')
 	$sessionStorage.name = 'haou';
 	console.log($localStorage);
 	init(); // 初始化
-	console.log($sessionStorage);
+	console.log($sessionStorage['name']);
 }]);

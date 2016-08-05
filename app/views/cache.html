@@ -1,26 +1,45 @@
 <html>
  <head></head>
  <body>
-  <div ng-include="\'app/views/common/header.html\'"></div>
-  <div class="header-padding modal-content">
-   <form class="list-table profile-table">
-    <div class="list-line profile-line">
-     <a>手机号 <input type="text" ng-model="vm.phone" class="form-control" placeholder="输入手机号" /></a> 
-     <a><label>验证码</label> <input type="text" ng-model="vm.validCode" class="form-control" /> <span class="profile-right">
-       <div ng-if="!vm.notGet" class="btn btn-inline btn-primary-border" ng-click="vm.clickValidCode()">
-        获取验证码
-       </div>
-       <div ng-if="vm.notGet" class="btn btn-inline btn-primary-border">
-        <timer interval="1000" countdown="60" end-time="0" finish-callback="vm.notGet = !vm.notGet">
-         {{countdown}}
-        </timer>s
-       </div></span></a>
+  <div class="login-wrapper wrapper login-min-height">
+   <div class="login-form">
+    <i class="iconfont icon-jiantou" ng-click="vm.goBack()"></i>
+    <div class="login-logo">
+     <img src="http://zhaime.qiniudn.com/uploads/logov2.svg" />
     </div>
-    <div class="line-btn">
-     <button ng-show="vm.phone &amp;&amp; vm.validCode" class="btn btn-primary btn-block" ng-click="vm.bindPhone()">解绑手机号</button> 
-     <button ng-show="!vm.phone || !vm.validCode" class="btn btn-cancel btn-block">解绑手机号</button>
-    </div>
-   </form>
+    <form name="loginForm" allow-invalid="true" ng-if="!vm.isLoginByPhone">
+     <div class="login-input">
+      <input type="text" placeholder="手机号或用户名" ng-model="vm.data.name" required="" />
+     </div>
+     <div class="login-input">
+      <input type="password" placeholder="输入登录密码" ng-model="vm.data.password" required="" />
+     </div>
+     <div class="login-input">
+      <button class="btn-login btn-block" ng-click="vm.login(vm.data)" ng-disabled="loginForm.$invalid || vm.submitting">登录</button>
+      <p class="login-p"><a ng-click="vm.goState(\'findPassword\',76)">找回密码</a> <a ng-click="vm.isLoginByPhone = true">手机验证登录</a></p>
+     </div>
+    </form>
+    <form name="loginPhoneForm" allow-invalid="true" ng-if="vm.isLoginByPhone">
+     <div class="login-input">
+      <input type="text" placeholder="输入手机号" ng-model="vm.phoneData.phone" maxlength="11" minlength="11" required="" />
+     </div>
+     <div class="login-input">
+      <div class="btn-valid text-center" ng-if="!vm.waiting" ng-disabled="!vm.phoneData.phone" ng-click="vm.showGraphicCode()">
+       获取验证码
+      </div>
+      <div ng-if="vm.waiting" class="btn-valid text-center">
+       <timer interval="1000" countdown="60" end-time="0" finish-callback="vm.waiting = !vm.waiting">
+        {{countdown}}
+       </timer>
+      </div>
+      <input type="text" placeholder="输入验证码" ng-model="vm.phoneData.validCode" required="" />
+     </div>
+     <div class="login-input">
+      <button class="btn-login btn-block" ng-click="vm.loginPhone(vm.phoneData)" ng-disabled="vm.submitting || loginPhoneForm.$invalid">登录/注册</button>
+      <p class="login-p text-center" ng-click="vm.isLoginByPhone = false">账号密码登录</p>
+     </div>
+    </form>
+   </div>
   </div>
  </body>
 </html>

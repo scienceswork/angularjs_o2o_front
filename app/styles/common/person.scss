@@ -17,15 +17,14 @@ $list-background:#fff;
 	background:$list-background;
     font-size: 0;
     line-height:0;
-    padding:0 5px 30px 5px;
+    padding:5px;
 }
 .list-block{
 	border-bottom: 1px solid #e8e6e6;
     border-right: 1px solid #e8e6e6;
-    color: #778185;
+    padding: 15px 0 20px 0;
     display: inline-block;
-    font-size: 12px;
-    height: 70px;
+    height: 88px;
     overflow: hidden;
     width: 33%;
 	text-align: center;
@@ -35,7 +34,22 @@ $list-background:#fff;
     height: 35px;
     line-height: 35px;
     overflow: hidden;
+    font-weight: normal;
+    margin: 0;
 	}
+    h1.list-block-icon {
+        color: #ddd;
+    }
+    p{
+    display: block;
+    margin: 0;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #778185;
+    font-size: 12px;
+    }
 }
 .list-block:nth-child(3n){border-right: 0;}
 .order-item{
@@ -51,9 +65,12 @@ $list-background:#fff;
     font-size: 11px;
     float:left;
     width: 20%;
-    p{
-        font-size:11px;
-        padding-top:2px;
+        p{
+            font-size:11px;
+            padding-top:2px;
+        }
     }
+    i{
+        color:#999;
     }
 }

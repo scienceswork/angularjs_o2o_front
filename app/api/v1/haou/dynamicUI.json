@@ -9,28 +9,28 @@
                 "name": "优店",
                 "type": 0,
                 "sequence": 0,
-                "iconClass": "icon-home"
+                "iconClass": "fa-home"
             },
             {
                 "id": 2,
                 "name": "好友店",
                 "type": 0,
                 "sequence": 1,
-                "iconClass": "icon-person"
+                "iconClass": "fa-users"
             },
             {
                 "id": 3,
-                "name": "我的订单",
+                "name": "购物车",
                 "type": 0,
                 "sequence": 2,
-                "iconClass": "icon-star-filled"
+                "iconClass": "fa-shopping-cart"
             },
             {
                 "id": 4,
                 "name": "个人中心",
                 "type": 0,
                 "sequence": 3,
-                "iconClass": "icon-gear"
+                "iconClass": "fa-user"
             }
         ]
     }

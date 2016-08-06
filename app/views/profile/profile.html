@@ -3,9 +3,9 @@
 <!--   <button class="btn btn-link btn-nav pull-left">
     <span class="icon icon-home"></span>
   </button> -->
-  <button class="btn btn-link btn-nav pull-right" ng-click="vm.header.rightEvent()">
+  <button class="btn btn-link btn-nav pull-right" ng-click="vm.header.rightEvent()" style="margin-right:0;">
     <!-- 设置 -->
-    <span class="icon icon-gear"></span>
+    <span class="fa fa-cog" style="font-size:20px;"></span>
   </button>
   <h1 class="title">个人中心</h1>
 </header>
@@ -33,65 +33,65 @@
     </li>
     <li class="order-item">
       <a href="#">
-        <span class="icon icon-home"></span>
+        <i class="fa fa-calendar-minus-o" aria-hidden="true" style="font-size:24px;"></i>
         <p>待付款</p>
       </a>
       <a href="#">
-        <span class="icon icon-home"></span>
+        <i class="fa fa-bookmark-o" aria-hidden="true" style="font-size:24px;"></i>
         <p>待发货</p>
       </a>
       <a href="#">
-        <span class="icon icon-home"></span>
+        <i class="fa fa-truck" aria-hidden="true" style="font-size:24px;"></i>
         <p>待收货</p>
       </a>
       <a href="#">
-        <span class="icon icon-home"></span>
+        <i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size:24px;"></i>
         <p>待评价</p>
       </a>
       <a href="#">
-        <span class="icon icon-home"></span>
-        <p>退货退款</p>
+        <i class="fa fa-history" aria-hidden="true" style="font-size:24px;"></i>
+        <p>退货/退款</p>
       </a>
     </li>
   </ul>
   <!-- 我的订单部分-结束 -->
   <div class="list">
     <div class="list-block">
-      <h1 ng-if="!vm.isLogin">--</h1>
-      余额
+      <h1 ng-if="vm.isLogin" ng-bind="'￥'+vm.profile.balances"></h1>
+      <p>账户余额</p>
     </div>
     <div class="list-block">
       <h1 ng-if="vm.profile.credits" ng-bind="vm.profile.credits"></h1>
       <h1 ng-if="!vm.profile.credits">--</h1>
-      积分
+      <p>我的积分</p>
     </div>
     <div class="list-block">
-      <h1 ng-if="!vm.isLogin">--</h1>
-      红包
+      <h1 ng-if="vm.isLogin" ng-bind="vm.profile.bonusCount+'个'"></h1>
+      <p>我的红包</p>
     </div>
     <div class="list-block">
-      <h1>--</h1>
-      地址
+      <h1 class="list-block-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+      <p>地址管理</p>
     </div>
     <div class="list-block">
-      <h1>--</h1>
-      我要开店
+      <h1 class="list-block-icon"><i class="fa fa-home" aria-hidden="true"></i></h1>
+      <p>我要开店</p>
     </div>
     <div class="list-block" ng-click="vm.ifbind('password')">
-      <h1>--</h1>
-      密码管理
+      <h1 class="list-block-icon"><i class="fa fa-lock" aria-hidden="true"></i></h1>
+      <p>密码管理</p>
     </div>
     <div class="list-block" ng-click="vm.ifbind('')">
-      <h1>--</h1>
-      解绑手机
+      <h1 class="list-block-icon"><i class="fa fa-mobile" aria-hidden="true"></i></h1>
+      <p>解绑手机</p>
     </div>
     <div class="list-block">
-      <h1>--</h1>
-      关于我们
+      <h1 class="list-block-icon"><i class="fa fa-info-circle" aria-hidden="true"></i></h1>
+      <p>关于我们</p>
     </div>
     <div class="list-block">
-      <h1>--</h1>
-      使用帮助
+      <h1 class="list-block-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></h1>
+      <p>使用帮助</p>
     </div>
   </div>
 </div>

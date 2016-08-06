@@ -143,7 +143,7 @@ angular.module('webFrontApp')
     // 关于好友Store
     .state('about', {
     	url: '/about',
-    	template: '关于好友Store'
+    	template: '关于好友Store<i class="fa fa-map-marker"></i>链接'
     })
     // 帮助中心
     .state('help', {

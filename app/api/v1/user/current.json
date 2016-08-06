@@ -2,12 +2,12 @@
     "success": true,
     "data": {
         "password": true,
-        "balances": 0,
+        "balances": 10.10,
         "phone": "15113992194",
-        "bonusCount": 0,
+        "bonusCount": 2,
         "gravatar": "null",
         "thirdParts": [],
-        "name": "Haou--喵喵",
+        "name": "谢泽辉--喵喵",
         "nickname": "vxmxnzhahp",
         "id": 1211021,
         "gravatar_id": "null"

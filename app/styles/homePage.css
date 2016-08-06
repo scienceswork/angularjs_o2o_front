@@ -24,6 +24,21 @@
 	position: absolute;
 
 }
+.homebar input::-webkit-input-placeholder{
+	color: #fff !important; /* WebKit browsers */
+}
+/*
+.homebar input:-moz-placeholder{
+	color: #fff !important;/ Mozilla Firefox 4 to 18 /
+}
+.homebar input::-moz-placeholder{
+	color: #fff !important;/ Mozilla Firefox 19+ /
+}
+.homebar input:-ms-input-placeholder{
+	color: #fff !important;/ie/
+}
+*/
+
 .homebar .icon-search{
 	position: absolute;
 	right: 15px;

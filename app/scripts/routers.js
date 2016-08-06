@@ -9,7 +9,7 @@ angular.module('webFrontApp')
     // 测试页面
     .state('test', {
         url: '/test',
-        templateUrl: 'views/test.html',
+        templateUrl: 'views/cache.html',
         controller: 'testCtrl',
         controllerAs: 'vm'
     })
@@ -56,6 +56,13 @@ angular.module('webFrontApp')
         url: '/unbindPhone?phone',
         templateUrl: 'views/profile/unbindPhone/unbindPhone.html',
         controller: 'profileUnbindPhoneCtrl',
+        controllerAs: 'vm'
+    })
+    // 余额，传入参数余额amount,非负数字
+    .state('wallet', {
+        url: '/wallet?amount',
+        templateUrl: 'views/profile/wallet/wallet.html',
+        controller: 'walletCtrl',
         controllerAs: 'vm'
     })
     // 放置haou店铺相关的全部路由，嵌套
@@ -149,11 +156,6 @@ angular.module('webFrontApp')
     .state('help', {
     	url: '/help',
     	template: '这里是帮助中心'
-    })
-    // 余额，传入参数余额amount,非负数字
-    .state('wallet', {
-    	url: '/wallet?amount',
-    	template: '这里是余额'
     })
     // 提现，传入参数提现额度amount,非负数字，不得大于余额的数目
     .state('withdrawal', {

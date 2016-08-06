@@ -1,6 +1,6 @@
 <header class="bar bar-nav">
     <button class="btn btn-link btn-nav pull-left" ng-click="vm.header.goBack()">
-      <span class="icon icon-left-nav"></span>
+      <span class="fa fa-chevron-left"></span>
     </button>
     <h1 class="title">个人信息</h1>
 </header>
@@ -16,7 +16,7 @@
     </li>
     <li class="table-view-cell media">
       <a class="navigate-right">
-        <p class="pull-right">{{ vm.name }}</p>
+        <p class="pull-right" ng-bind="vm.name"></p>
         <div class="media-body">
          	<span class="small-px">名称</span>
         </div>
@@ -25,7 +25,7 @@
     <li class="table-view-divider small-px" style="border:0;">注册手机</li>
     <li class="table-view-cell media">
       <a class="navigate-right" ui-sref="unbindPhone({'phone':vm.phone})">
-        <p class="pull-right">{{ vm.phone }}</p>
+        <p class="pull-right" ng-bind="vm.phone"></p>
         <div class="media-body">
          	<span class="small-px">您绑定的手机号码</span>
         </div>

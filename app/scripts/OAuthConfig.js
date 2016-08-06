@@ -7,10 +7,10 @@
 angular.module('webFrontApp')
 .config(['OAuthProvider',function(OAuthProvider) {
 	OAuthProvider.configure({
-		'baseUrl': 'http://localhost/index.php',
+		'baseUrl': 'http://localhost/api/v1/',
 		'clientId': 'NO',
 		'clientSecret': null,
-		'grantPath': 'Index/index',
-		'revokePath': 'auth/revoke'
+		'grantPath': 'oauth2/token',
+		'revokePath': 'oauth2/revoke'
 	});
 }])

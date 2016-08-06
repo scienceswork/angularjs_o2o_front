@@ -18,7 +18,7 @@ angular.module('webFrontApp')
 		S.isLogin = true;
 		S.goState = goState; // 页面跳转
 		S.ifbind = ifbind; // 解绑手机、绑定手机、修改密码
-		S.defaultGravatar = 'http://localhost:9000/images/yeoman.png'; // 没有登录时候的默认头像
+		S.defaultGravatar = 'http://zhaime.qiniudn.com/uploads/item_cover/055b630a1e08e1b8d60930da3a99ea01.jpg'; // 没有登录时候的默认头像
 		delete $localStorage.name;
 		getCredits();// 获取积分
 		S.header = { // 头部对象，放置点击个人信息跳转的页面
@@ -41,6 +41,24 @@ angular.module('webFrontApp')
 					goState('login');
 				}
 			}
+		};
+		$localStorage.token = 1111;
+		// 获取个人信息，每次点击个人信息页面都会发送一次get请求
+		if ($localStorage.token) {
+			// 判断token不为空，则表示已经登录，获取个人信息
+			haouHttp.get('api/v1/user/current.json').success(function(response) {
+				S.profile = response.data;
+				console.log('success');
+			}).error(function(response) {
+				// console.log('error');
+				if (response.code === 401) {
+					// 判断状态码，若为401则重新登录
+					$state.go('login');
+				} else {
+					alert(response.error);
+				}
+			})
+			console.log(S.profile);
 		}
 	}
 	// 按钮点击跳转
@@ -51,7 +69,7 @@ angular.module('webFrontApp')
 	function getCredits() {
 		haouHttp.get('api/v1/integral/getCredits.json').success(function(response) {
 			S.profile.credits = response.data.credits;
-			console.log(S.profile.credits);
+			// console.log(S.profile.credits);
 		}).error(function(response) {
 			alert(response.error);
 		});
@@ -86,7 +104,9 @@ angular.module('webFrontApp')
 	// delete $localStorage;
 	S.name = $localStorage.name;
 	$sessionStorage.name = 'haou';
-	console.log($localStorage);
+	// console.log($localStorage);
 	init(); // 初始化
-	console.log($sessionStorage['name']);
+	console.log(S.profile);
+	// console.log('profile');
+	// console.log(S.profile);
 }]);

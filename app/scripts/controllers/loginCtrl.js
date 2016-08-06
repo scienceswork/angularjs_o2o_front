@@ -5,7 +5,7 @@
 * login控制器
 */
 angular.module('webFrontApp')
-.controller('loginCtrl', ['$scope', 'haouHttp', '$state', '$window', 'storageService', 'authService', function($scope, haouHttp, $state, $window, storageService, authService){
+.controller('loginCtrl', ['$scope', 'haouHttp', '$state', '$window', 'storageService', 'authService', '$localStorage', function($scope, haouHttp, $state, $window, storageService, authService, $localStorage){
 	// 控制器初始化函数
 	function init() {
 		S.goBack = goBack; // 后退
@@ -22,12 +22,40 @@ angular.module('webFrontApp')
 	// 登陆按钮点击函数，传入表单数据，帐号密码登录
 	function login(data) {
 		console.log(data);
-		authService.login(data);
+		loginOperation(data);
 	}
 	// 登录按钮点击函数，传入表单数据，短信验证码登录
 	function loginPhone(data) {
 		console.log(data);
-		console.log(S.phoneData);
+		loginOperation(data);
+	}
+	// 登录操作
+	function loginOperation(data) {
+		S.submitting = true; // 表示已经点击登录按钮
+		S.errors = ''; // 错误信息
+		data.openId = $localStorage.openId; // 传递openId
+		authService.login(data).then(function() {
+			// 执行authService操作
+			if (data.openId) {
+				haouHttp.get('user/wechatGetToken', {
+					'params': {
+						'openId': data.openId
+					},
+					'noAuth': true,
+					'version': true
+				}).success(function(response) {
+					$localStorage.token = reponse.data.token;
+				}).error(function(response) {
+					alert(response.error);
+				});
+			}
+		}, function(response) {
+			if (response.data.error) {
+				alert('未知错误');
+			}
+		})['finally'](function() {
+			S.submitting = false;
+		});
 	}
 	// 后退
 	function goBack() {

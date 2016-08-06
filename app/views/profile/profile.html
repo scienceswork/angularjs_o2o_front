@@ -1,10 +1,10 @@
 
 <header class="bar bar-nav">
-  <button class="btn btn-link btn-nav pull-left">
+<!--   <button class="btn btn-link btn-nav pull-left">
     <span class="icon icon-home"></span>
-  </button>
+  </button> -->
   <button class="btn btn-link btn-nav pull-right" ng-click="vm.header.rightEvent()">
-    设置
+    <!-- 设置 -->
     <span class="icon icon-gear"></span>
   </button>
   <h1 class="title">个人中心</h1>
@@ -17,82 +17,82 @@
 
 
 <div class="content">
-<div class="userhead-Pic">
-  <img src="{{ vm.defaultGravatar }}" alt="头像">
-  <p>谢泽辉</p>
-  <a ng-click="vm.goState('login')">登录/注册</a>
-</div>
-<!-- 我的订单部分 -->
-<ul class="table-view">
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      <span class="badge badge-inverted">查看全部订单</span>
-        我的订单
-    </a>
-  </li>
-  <li class="order-item">
-    <a href="#">
-      <span class="icon icon-home"></span>
-      <p>待付款</p>
-    </a>
-    <a href="#">
-      <span class="icon icon-home"></span>
-      <p>待发货</p>
-    </a>
-    <a href="#">
-      <span class="icon icon-home"></span>
-      <p>待收货</p>
-    </a>
-    <a href="#">
-      <span class="icon icon-home"></span>
-      <p>待评价</p>
-    </a>
-    <a href="#">
-      <span class="icon icon-home"></span>
-      <p>退货退款</p>
-    </a>
-  </li>
-</ul>
-<!-- 我的订单部分-结束 -->
-<div class="list">
-  <div class="list-block">
-    <h1 ng-if="!vm.isLogin">--</h1>
-    余额
+  <div class="userhead-Pic" style="background: url('{{vm.defaultGravatar}}') no-repeat; background-size:100%;">
+    <img src="{{ vm.defaultGravatar }}" alt="头像">
+    <p ng-bind="vm.profile.name" ng-show="vm.profile.name"></p>
+    <p ng-click="vm.goState('login')" ng-show="!vm.profile.name">登录/注册</p>
   </div>
-  <div class="list-block">
-    <h1 ng-if="vm.profile.credits" ng-bind="vm.profile.credits"></h1>
-    <h1 ng-if="!vm.profile.credits">--</h1>
-    积分
+  <!-- 我的订单部分 -->
+  <ul class="table-view">
+    <li class="table-view-cell">
+      <a class="navigate-right">
+        <span class="badge badge-inverted">查看全部订单</span>
+          我的订单
+      </a>
+    </li>
+    <li class="order-item">
+      <a href="#">
+        <span class="icon icon-home"></span>
+        <p>待付款</p>
+      </a>
+      <a href="#">
+        <span class="icon icon-home"></span>
+        <p>待发货</p>
+      </a>
+      <a href="#">
+        <span class="icon icon-home"></span>
+        <p>待收货</p>
+      </a>
+      <a href="#">
+        <span class="icon icon-home"></span>
+        <p>待评价</p>
+      </a>
+      <a href="#">
+        <span class="icon icon-home"></span>
+        <p>退货退款</p>
+      </a>
+    </li>
+  </ul>
+  <!-- 我的订单部分-结束 -->
+  <div class="list">
+    <div class="list-block">
+      <h1 ng-if="!vm.isLogin">--</h1>
+      余额
+    </div>
+    <div class="list-block">
+      <h1 ng-if="vm.profile.credits" ng-bind="vm.profile.credits"></h1>
+      <h1 ng-if="!vm.profile.credits">--</h1>
+      积分
+    </div>
+    <div class="list-block">
+      <h1 ng-if="!vm.isLogin">--</h1>
+      红包
+    </div>
+    <div class="list-block">
+      <h1>--</h1>
+      地址
+    </div>
+    <div class="list-block">
+      <h1>--</h1>
+      我要开店
+    </div>
+    <div class="list-block" ng-click="vm.ifbind('password')">
+      <h1>--</h1>
+      密码管理
+    </div>
+    <div class="list-block" ng-click="vm.ifbind('')">
+      <h1>--</h1>
+      解绑手机
+    </div>
+    <div class="list-block">
+      <h1>--</h1>
+      关于我们
+    </div>
+    <div class="list-block">
+      <h1>--</h1>
+      使用帮助
+    </div>
   </div>
-  <div class="list-block">
-    <h1 ng-if="!vm.isLogin">--</h1>
-    红包
-  </div>
-  <div class="list-block">
-    <h1>--</h1>
-    地址
-  </div>
-  <div class="list-block">
-    <h1>--</h1>
-    我要开店
-  </div>
-  <div class="list-block" ng-click="vm.ifbind('password')">
-    <h1>--</h1>
-    密码管理
-  </div>
-  <div class="list-block" ng-click="vm.ifbind('')">
-    <h1>--</h1>
-    解绑手机
-  </div>
-  <div class="list-block">
-    <h1>--</h1>
-    关于我们
-  </div>
-  <div class="list-block">
-    <h1>--</h1>
-    使用帮助
-  </div>
-</div>
 </div>
 
 

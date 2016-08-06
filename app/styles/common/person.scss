@@ -1,5 +1,17 @@
 $list-background:#fff;
 
+.filier-pic{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    z-index:-999;
+    -webkit-filter: blur(5px); /* Chrome, Opera */
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);    
+    filter: blur(5px);  
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
 
 .list{
 	background:$list-background;

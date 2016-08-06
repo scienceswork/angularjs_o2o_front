@@ -17,10 +17,11 @@
 
 
 <div class="content">
-  <div class="userhead-Pic" style="background: url('{{vm.defaultGravatar}}') no-repeat; background-size:100%;">
+  <div class="userhead-Pic">
     <img src="{{ vm.defaultGravatar }}" alt="头像">
     <p ng-bind="vm.profile.name" ng-show="vm.profile.name"></p>
     <p ng-click="vm.goState('login')" ng-show="!vm.profile.name">登录/注册</p>
+    <div class="filier-pic"  style="background: url('{{vm.defaultGravatar}}') no-repeat; background-size:100%;"></div>
   </div>
   <!-- 我的订单部分 -->
   <ul class="table-view">

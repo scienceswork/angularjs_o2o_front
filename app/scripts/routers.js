@@ -68,7 +68,9 @@ angular.module('webFrontApp')
     // 修改密码
     .state('changePassword', {
         url: '/changePassword',
-        templateUrl: 'views/profile/changePassword/changePassword.html'
+        templateUrl: 'views/profile/changePassword/changePassword.html',
+        controller: 'profileChangePasswordCtrl',
+        controllerAs: 'vm'
     })
     // 放置haou店铺相关的全部路由，嵌套
     .state('haou', {

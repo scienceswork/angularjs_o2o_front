@@ -9,7 +9,7 @@ angular.module('webFrontApp')
     // 测试页面
     .state('test', {
         url: '/test',
-        templateUrl: 'views/lactionCity.html',
+        templateUrl: 'views/messageBoard.html',
         controller: 'testCtrl',
         controllerAs: 'vm'
     })

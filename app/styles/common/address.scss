@@ -1,4 +1,4 @@
-.selectAddress{padding-top:15px;}
+.selectAddress{padding-top:15px;margin-top:5px;}
 .selectProv,.selectCity,.selectSchool{
 	clear:both;
 	width: 100%;
@@ -21,4 +21,8 @@
 	 padding:5px 5px 8px 5px;
 	 font-size:14px;
 	}
+}
+.address-detailAddress{
+	border: 1px dashed #777 !important;
+	padding: 10px;
 }

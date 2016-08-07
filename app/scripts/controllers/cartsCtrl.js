@@ -5,7 +5,7 @@
 * ordersCtrl订单控制器
 */
 angular.module('webFrontApp')
-.controller('ordersCtrl', ['$scope', '$state', function($scope, $state){
+.controller('cartsCtrl', ['$scope', '$state', function($scope, $state){
 	// 控制器初始化函数
 	function init() {
 		S.isOrders = true; // 订单导航标记

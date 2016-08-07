@@ -1,18 +1,32 @@
-<ul rn-carousel class="image" rn-carousel-auto-slide="" rn-carousel-buffered="" rn-carousel-index="0">
-  <li>
-    <img src="images/slider_01.jpg" style="width:100%;height:200px;" />
-  </li>  
-  <li>
-    <img src="images/slider_02.png" style="width:100%;height:200px;" />
-  </li>  
-  <li>
-    <img src="images/slider_03.jpg" style="width:100%;height:200px;" />
-  </li>  
-  <li>
-    <img src="images/slider_04.jpg" style="width:100%;height:200px;" />
-  </li>  
-  <li>
-    <img src="images/slider_05.jpg" style="width:100%;height:200px;" />
-  </li>
-  <img src="http://zhaime.qiniudn.com/uploads/bannerPadding1080_810.png" />
-</ul>
+<div class="wallet-wrapper text-center">
+  <div class="wallet">
+    <div class="header">
+      <div class="sprite sprite-17" ng-click="vm.header.goBack()"></div>我的钱包
+      <div class="right" ng-click="vm.header.rightEvent()">提现</div></div>
+    <div class="num">
+      <h1>￥
+        <span>{{vm.amount[0]}}</span>.{{vm.amount[1]}}</h1>
+      <label class="text-error" ng-click="vm.openDialog()">充值</label></div>
+  </div>
+</div>
+<div class="wallet-table list-table" infinite-scroll="vm.loadMore()">
+  <div class="wallet-list" ng-repeat="statements in vm.statements">
+    <div class="list-line" ng-click="vm.showDetails(statements)">
+      <div class="wallet-content wallet-right">
+        <p class="wallet-p" ng-class="{\'text-error\': statements.amount < 0}">￥{{statements.amount}}</p>
+        <p>{{statements.status}}</p>
+        <p ng-if="statements.orderDetailList[0]">查看详情</p></div>
+      <div class="wallet-content re-wallet">
+        <p class="wallet-p">{{statements.targetName}}</p>
+        <p>{{statements.updatedAt}}</p>
+        <p>{{statements.subject}}</p>
+      </div>
+    </div>
+    <div class="list-line" ng-if="statements.showDetail">
+      <div class="wallet-detail" ng-repeat="item in statements.orderDetailList">
+        <img ng-src="{{item.thumbName}}">
+        <span>{{item.itemName | truncate:12}}</span>
+        <label>￥{{item.itemPrice}}X{{item.itemQuantity}}</label></div>
+    </div>
+  </div>
+</div>

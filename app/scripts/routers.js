@@ -9,7 +9,7 @@ angular.module('webFrontApp')
     // 测试页面
     .state('test', {
         url: '/test',
-        templateUrl: 'views/cache.html',
+        templateUrl: 'views/lactionCity.html',
         controller: 'testCtrl',
         controllerAs: 'vm'
     })
@@ -30,11 +30,11 @@ angular.module('webFrontApp')
         controller: 'storesCtrl',
         controllerAs: 'vm'
     })
-    // 订单列表
+    // 购物差
     .state('orders', {
-        url: '/orders',
-        templateUrl: 'views/orders/orders.html',
-        controller: 'ordersCtrl',
+        url: '/carts',
+        templateUrl: 'views/carts/carts.html',
+        controller: 'cartsCtrl',
         controllerAs: 'vm'
     })
     // 个人中心
@@ -64,6 +64,11 @@ angular.module('webFrontApp')
         templateUrl: 'views/profile/wallet/wallet.html',
         controller: 'walletCtrl',
         controllerAs: 'vm'
+    })
+    // 修改密码
+    .state('changePassword', {
+        url: '/changePassword',
+        templateUrl: 'views/profile/changePassword/changePassword.html'
     })
     // 放置haou店铺相关的全部路由，嵌套
     .state('haou', {
@@ -155,7 +160,21 @@ angular.module('webFrontApp')
     // 帮助中心
     .state('help', {
     	url: '/help',
-    	template: '这里是帮助中心'
+    	templateUrl: 'views/profile/help/help.html',
+        controller: 'profileHelpCtrl',
+        controllerAs: 'vm'
+    })
+    // 意见反馈
+    .state('feedback', {
+        url: '/feedback',
+        templateUrl: 'views/profile/feedback/feedback.html',
+        controller: 'profileFeedbackCtrl',
+        controllerAs: 'vm'
+    })
+    // 常见问题
+    .state('faq', {
+        url: '/faq',
+        templateUrl: 'views/profile/faq/faq.html'
     })
     // 提现，传入参数提现额度amount,非负数字，不得大于余额的数目
     .state('withdrawal', {
@@ -177,11 +196,6 @@ angular.module('webFrontApp')
    		url: '/haverefund',
    		template: '这里是退款订单'
    	})
-    // 修改密码
-    .state('changePassword', {
-    	url: '/changePassword',
-    	template: '这里是修改密码'
-    })
     // 我要开店
     .state('openStore', {
     	url: '/openStore',

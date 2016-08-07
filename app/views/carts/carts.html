@@ -1,0 +1,47 @@
+<header class="bar bar-nav">
+	<h1 class="title">购物车</h1>
+</header>
+<div class="content">
+	<div class="segmented-control">
+	  <a class="control-item active" href="#all">
+	    全部
+	  </a>
+	  <a class="control-item" href="#payment">
+	    待付款
+	  </a>
+	  <a class="control-item" href="#Drop-shipping">
+	    待发货
+	  </a>
+	  <a class="control-item" href="#delivered">
+	    待收货
+	  </a>
+	  <a class="control-item" href="#ToBeEvaluated">
+	    待评价
+	  </a>
+	</div>
+	<div class="card">
+	  <span id="all" class="control-content active">
+		<div ng-include="'../templates/gk-orderBlock.html'"></div>
+		<!-- 这里放全部订单块 -->
+	  </span>
+	  <span id="payment" class="control-content">
+		<div ng-include="'../templates/gk-orderBlock.html'"></div>
+		<!-- 这里放待付款订单块 -->
+	  </span>
+	  <span id="Drop-shipping" class="control-content">
+		<div ng-include="'../templates/gk-orderBlock.html'"></div>
+		<!-- 这里放待发货订单块 -->
+	  </span>
+	  <span id="delivered" class="control-content">
+		<div ng-include="'../templates/gk-orderBlock.html'"></div>
+		<!-- 这里放待收货订单块 -->
+	  </span>
+	  <span id="ToBeEvaluated" class="control-content">
+		<div ng-include="'../templates/gk-orderBlock.html'"></div>
+		<!-- 这里放待评价订单块 -->
+	  </span>
+	</div>
+</div>
+
+<!-- 底部UI导航 -->
+<div ng-include="'./views/common/footer.html'"></div>

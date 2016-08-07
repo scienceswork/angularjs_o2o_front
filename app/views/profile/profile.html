@@ -56,7 +56,7 @@
   </ul>
   <!-- 我的订单部分-结束 -->
   <div class="list">
-    <div class="list-block">
+    <div class="list-block" ng-click="vm.goState('wallet',{'amount':vm.profile.balances})">
       <h1 ng-if="vm.isLogin" ng-bind="'￥'+vm.profile.balances"></h1>
       <p>账户余额</p>
     </div>
@@ -69,7 +69,7 @@
       <h1 ng-if="vm.isLogin" ng-bind="vm.profile.bonusCount+'个'"></h1>
       <p>我的红包</p>
     </div>
-    <div class="list-block">
+    <div class="list-block" ng-click="vm.goState('address')">
       <h1 class="list-block-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></h1>
       <p>地址管理</p>
     </div>
@@ -89,7 +89,7 @@
       <h1 class="list-block-icon"><i class="fa fa-info-circle" aria-hidden="true"></i></h1>
       <p>关于我们</p>
     </div>
-    <div class="list-block">
+    <div class="list-block" ng-click="vm.goState('help')">
       <h1 class="list-block-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></h1>
       <p>使用帮助</p>
     </div>

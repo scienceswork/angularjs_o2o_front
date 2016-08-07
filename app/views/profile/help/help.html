@@ -1,28 +1,28 @@
 <header class="bar bar-nav">
-    <button class="btn btn-link btn-nav pull-left">
-      <span class="icon icon-left-nav"></span>
+    <button class="btn btn-link btn-nav pull-left" ng-click="vm.header.goBack()">
+      <span class="fa fa-chevron-left"></span>
     </button>
     <h1 class="title">帮助中心</h1>
 </header>
 <div class="content">
   <ul class="table-view">
     <li class="table-view-cell media">
-      <a class="navigate-right">
-        <p class="pull-right">400-***-***</p>
+      <a class="navigate-right" ng-href="tel:{{vm.phoneNum}}">
+        <p class="pull-right" ng-bind="vm.servicePhone"></p>
         <div class="media-body">
-         客服
+         Haou客服
         </div>
       </a>
     </li>
     <li class="table-view-cell media">
-      <a class="navigate-right">
+      <a class="navigate-right" ui-sref="feedback">
         <div class="media-body">
-         提意见
+         吐槽几句
         </div>
       </a>
     </li>
     <li class="table-view-cell media">
-      <a class="navigate-right">
+      <a class="navigate-right" ui-sref="faq">
         <div class="media-body">
          常见问题
         </div>

@@ -1,6 +1,7 @@
 {
 	"success": true,
 	"data": {
+    "name": "token",
 		"token": "aceba13c-f445-464b-8bd3-5bc795ff540e"
 	}
 }

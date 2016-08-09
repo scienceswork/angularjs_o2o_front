@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "data": {
+    "name": "商品分类",
+    "num": "8",
+    "classify": [
+      {
+        "id": "1",
+        "position": "1",
+        "name": "水果",
+        "class": "放置雪碧图的class"
+      },
+      {
+        "id": "2",
+        "position": "2",
+        "name": "零食",
+        "class": "放置雪碧图的class"
+      },
+      {
+        "id": "3",
+        "position": "3",
+        "name": "方便面",
+        "class": "放置雪碧图的class"
+      },
+      {
+        "id": "4",
+        "position": "4",
+        "name": "生活用品",
+        "class": "放置雪碧图的class"
+      },
+      {
+        "id": "5",
+        "position": "5",
+        "name": "烟酒饮料",
+        "class": "放置雪碧图的class"
+      },
+      {
+        "id": "6",
+        "position": "6",
+        "name": "调料干货",
+        "class": "放置雪碧图的class"
+      },
+      {
+        "id": "7",
+        "position": "7",
+        "name": "特产",
+        "class": "放置雪碧图的class"
+      },
+      {
+        "id": "8",
+        "position": "8",
+        "name": "常购品",
+        "class": "放置雪碧图的class"
+      }
+    ]
+  }
+}

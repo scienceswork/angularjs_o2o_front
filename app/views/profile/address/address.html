@@ -1,0 +1,12 @@
+<header class="bar bar-nav">
+  <button class="btn btn-link btn-nav pull-left" ng-click="vm.header.goBack()">
+    <span class="fa fa-chevron-left"></span>
+  </button>
+  <h1 class="title">管理收货地址</h1>
+  <button class="btn btn-link btn-nav pull-right" ng-click="vm.header.rightEvent()">
+    <span class="icon icon-plus"></span>
+  </button>
+</header>
+<div class="content">
+  <div ng-include="'../templates/gk-addresses-blcok.html'" scope="" onload=""></div>
+</div>

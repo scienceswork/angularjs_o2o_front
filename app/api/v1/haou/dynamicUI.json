@@ -2,7 +2,7 @@
     "success": true,
     "data": {
         "name": "默认UI",
-        "version": 1,
+        "num": "4",
         "dynamicUIDetails": [
             {
                 "id": 1,

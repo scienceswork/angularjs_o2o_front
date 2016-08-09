@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>好友Store</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="好友 好友Store 优店 好友店 网上便利店 校园超市 5分钟送货上门 自建仓库">
-    <meta name="description" content="好友Store隶属于深圳市创客网络科技有限公司，创立于2016年9月。立志打造全国最具影响力的高校生活服务O2O平台之一。">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/ratchet/dist/css/ratchet.css" />
-    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.css" />
-    <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.css" />
-    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/common/commom_o2o.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/homePage.css" />
-    <link rel="stylesheet" href="styles/font-awesome/scss/font-awesome.css" />
-    <!-- endbuild -->
-  </head>
-  <body ng-app="webFrontApp" ng-controller="MasterCtrl as root">
-    <!--[if lte IE 8]>
-     <p class="browsehappy">您正在使用一个<strong>过时的</strong>浏览器. 请点击参加<a href="http://browsehappy.com/">浏览器下乡, 免费以旧换新活动</a>.</p>
-    <![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>好友Store</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords" content="好友 好友Store 优店 好友店 网上便利店 校园超市 5分钟送货上门 自建仓库">
+  <meta name="description" content="好友Store隶属于深圳市创客网络科技有限公司，创立于2016年9月。立志打造全国最具影响力的高校生活服务O2O平台之一。">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/ratchet/dist/css/ratchet.css"/>
+  <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.css"/>
+  <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.css"/>
+  <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css"/>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/common/commom_o2o.css"/>
+  <link rel="stylesheet" href="styles/main.css"/>
+  <link rel="stylesheet" href="styles/homePage.css"/>
+  <link rel="stylesheet" href="styles/font-awesome/scss/font-awesome.css"/>
+  <!-- endbuild -->
+</head>
+<body ng-app="webFrontApp" ng-controller="MasterCtrl as root">
+<!--[if lte IE 8]>
+<p class="browsehappy">您正在使用一个<strong>过时的</strong>浏览器. 请点击参加<a href="http://browsehappy.com/">浏览器下乡, 免费以旧换新活动</a>.</p>
+<![endif]-->
 
-    <!-- Add your site or application content here -->    
-    <div ui-view class="wraper"></div>  
-    <!-- Baidu Analytics -->
-    <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?14a454b8fa5609e579b15aa34070ec4d";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
+<!-- Add your site or application content here -->
+<div ui-view class="wraper"></div>
+<!-- Baidu Analytics -->
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?14a454b8fa5609e579b15aa34070ec4d";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/ratchet/dist/js/ratchet.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/ngstorage/ngStorage.js"></script>
-    <script src="bower_components/query-string/query-string.js"></script>
-    <script src="bower_components/angular-oauth2/dist/angular-oauth2.js"></script>
-    <script src="bower_components/ng-dialog/js/ngDialog.js"></script>
-    <script src="bower_components/moment/moment.js"></script>
-    <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/ratchet/dist/js/ratchet.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/ngstorage/ngStorage.js"></script>
+<script src="bower_components/query-string/query-string.js"></script>
+<script src="bower_components/angular-oauth2/dist/angular-oauth2.js"></script>
+<script src="bower_components/ng-dialog/js/ngDialog.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <!-- Config start -->
-        <script src="scripts/OAuthConfig.js"></script>
-        <script src="scripts/routers.js"></script>
-        <!-- Config end -->
-        <!-- Service start -->
-        <script src="scripts/services/haouHttpService.js"></script>
-        <script src="scripts/services/dynamicUIService.js"></script>
-        <script src="scripts/services/authService.js"></script>
-        <script src="scripts/services/ngDialogService.js"></script>
-        <script src="scripts/services/storageService.js"></script>
-        <script src="scripts/services/graphicCodeService.js"></script>
-        <!-- Service end -->
-        <!-- Controller start -->
-        <script src="scripts/controllers/testCtrl.js"></script>
-        <script src="scripts/controllers/haouHomeCtrl.js"></script>
-        <script src="scripts/controllers/storesCtrl.js"></script>
-        <script src="scripts/controllers/cartsCtrl.js"></script>
-        <script src="scripts/controllers/profileCtrl.js"></script>
-        <script src="scripts/controllers/profileSettingCtrl.js"></script>
-        <script src="scripts/controllers/profileUnbindPhoneCtrl.js"></script>
-        <script src="scripts/controllers/loginCtrl.js"></script>
-        <script src="scripts/controllers/walletCtrl.js"></script>
-        <script src="scripts/controllers/profileChangePasswordCtrl.js"></script>
-        <script src="scripts/controllers/profileHelpCtrl.js"></script>
-        <script src="scripts/controllers/profileFeedbackCtrl.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/home.js"></script>
-        <!-- Controller end -->
-        <!-- endbuild -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<!-- Config start -->
+<script src="scripts/OAuthConfig.js"></script>
+<script src="scripts/routers.js"></script>
+<!-- Config end -->
+<!-- Service start -->
+<script src="scripts/services/haouHttpService.js"></script>
+<script src="scripts/services/dynamicUIService.js"></script>
+<script src="scripts/services/authService.js"></script>
+<script src="scripts/services/ngDialogService.js"></script>
+<script src="scripts/services/storageService.js"></script>
+<script src="scripts/services/graphicCodeService.js"></script>
+<!-- Service end -->
+<!-- Controller start -->
+<script src="scripts/controllers/testCtrl.js"></script>
+<script src="scripts/controllers/haouHomeCtrl.js"></script>
+<script src="scripts/controllers/storesCtrl.js"></script>
+<script src="scripts/controllers/cartsCtrl.js"></script>
+<script src="scripts/controllers/profileCtrl.js"></script>
+<script src="scripts/controllers/profileSettingCtrl.js"></script>
+<script src="scripts/controllers/profileUnbindPhoneCtrl.js"></script>
+<script src="scripts/controllers/loginCtrl.js"></script>
+<script src="scripts/controllers/walletCtrl.js"></script>
+<script src="scripts/controllers/profileChangePasswordCtrl.js"></script>
+<script src="scripts/controllers/profileHelpCtrl.js"></script>
+<script src="scripts/controllers/profileFeedbackCtrl.js"></script>
+<script src="scripts/controllers/addressCtrl.js"></script>
+<script src="scripts/controllers/addressAddCtrl.js"></script>
+<script src="scripts/controllers/haouItemInfoCtrl.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/home.js"></script>
+<!-- Controller end -->
+<!-- endbuild -->
 </body>
 </html>

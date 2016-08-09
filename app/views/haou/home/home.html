@@ -14,12 +14,12 @@
         广告垂直轮播
   </div>
   <div ng-include="'templates/gk-goodlist-header.html'" style="margin-bottom: 0"></div>
-  
+
   <div  ng-app="goodlist" ng-init="names=[
                                           {name:'康师傅方便面',delprice:'6.20',price:'5.90'},
                                           {name:'统一方便面',delprice:'6.30',price:'6.10'},
                                           {name:'统一方便面',delprice:'6.30',price:'6.10'}]">
-    <div ng-include="'templates/gk-goodlist.html'" ng-repeat="x in names"></div>
+    <div ng-include="'templates/gk-goodlist.html'" ng-repeat="x in names" ui-sref="haou.itemInfo"></div>
   </div>
 </div>
 

@@ -2,6 +2,7 @@
     "success": true,
     "data": {
         "code": 200,
+        "name": "短信验证码",
         "message": "发送成功",
         "token": "15113992194"
     }

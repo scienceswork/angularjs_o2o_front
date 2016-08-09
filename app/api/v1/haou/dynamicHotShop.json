@@ -1,0 +1,108 @@
+{
+  "success": true,
+  "data": {
+    "name": "热门商品",
+    "num": "10",
+    "contents": [
+      {
+        "id": "1",
+        "position": "0",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "1",
+        "position": "1",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "2",
+        "position": "2",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "3",
+        "position": "3",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "4",
+        "position": "4",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "5",
+        "position": "5",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "6",
+        "position": "6",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "7",
+        "position": "7",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "8",
+        "position": "8",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "9",
+        "position": "9",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      },
+      {
+        "id": "10",
+        "position": "10",
+        "image": "http://zhaime.qiniudn.com/uploads/item_cover/21ce5800fac53a7833a3a487997db3ba.png",
+        "title": "康师傅牛肉面",
+        "price": "5.90",
+        "sale": "150",
+        "from": "home"
+      }
+    ]
+  }
+}

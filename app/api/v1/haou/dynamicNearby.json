@@ -1,0 +1,54 @@
+{
+  "success": true,
+  "data": {
+    "name": "附近的商家",
+    "num": "5",
+    "shop": [
+      {
+        "id": "1",
+        "position": "1",
+        "img": "img url",
+        "shopName": "无敌店",
+        "star": "4.5",
+        "address": "韩山师范学院",
+        "distance": "1.2"
+      },
+      {
+        "id": "2",
+        "position": "2",
+        "img": "img url",
+        "shopName": "无敌店",
+        "star": "4.5",
+        "address": "韩山师范学院",
+        "distance": "1.2"
+      },
+      {
+        "id": "3",
+        "position": "3",
+        "img": "img url",
+        "shopName": "无敌店",
+        "star": "4.5",
+        "address": "韩山师范学院",
+        "distance": "1.2"
+      },
+      {
+        "id": "4",
+        "position": "4",
+        "img": "img url",
+        "shopName": "无敌店",
+        "star": "4.5",
+        "address": "韩山师范学院",
+        "distance": "1.2"
+      },
+      {
+        "id": "5",
+        "position": "5",
+        "img": "img url",
+        "shopName": "无敌店",
+        "star": "4.5",
+        "address": "韩山师范学院",
+        "distance": "1.2"
+      }
+    ]
+  }
+}

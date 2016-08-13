@@ -1,50 +1,8 @@
-  <ul class="categoryLiIcon">
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test1.jpeg"/>
-        <em>水果</em>
-      </a>
-    </li>
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test2.jpeg"/>
-        <em>零食</em>
-      </a>
-    </li>
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test1.jpeg"/>
-        <em>方便面</em>
-      </a>
-    </li>
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test2.jpeg"/>
-        <em>生活用品</em>
-      </a>
-    </li>
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test1.jpeg"/>
-        <em>烟酒饮料</em>
-      </a>
-    </li>
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test2.jpeg"/>
-        <em>调料干货</em>
-      </a>
-    </li>
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test1.jpeg"/>
-        <em>特产</em>
-      </a>
-    </li>
-    <li>
-      <a href="category.html">
-        <img src="./images/home_test2.jpeg"/>
-        <em>常购品</em>
-      </a>
-    </li>
-  </ul>
+<ul class="categoryLiIcon">
+  <li ng-repeat="item in vm.classify">
+    <a href="#">
+      <img ng-src="{{ item.img }}" alt="{{ item.name }}">
+      <em>{{ item.name }}</em>
+    </a>
+  </li>
+</ul>

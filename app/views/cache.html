@@ -1,32 +1,24 @@
-<div class="wallet-wrapper text-center">
-  <div class="wallet">
-    <div class="header">
-      <div class="sprite sprite-17" ng-click="vm.header.goBack()"></div>我的钱包
-      <div class="right" ng-click="vm.header.rightEvent()">提现</div></div>
-    <div class="num">
-      <h1>￥
-        <span>{{vm.amount[0]}}</span>.{{vm.amount[1]}}</h1>
-      <label class="text-error" ng-click="vm.openDialog()">充值</label></div>
+<div ng-include="\'app/views/common/header.html\'"></div>
+<div class="search-header" ng-if="vm.header.headerHide">
+  <div class="store-search">
+    <div class="input-group">
+      <input type="text" ng-model="vm.keyword" placeholder="请输入您的学校">
+      <div class="text-danger text-center" ng-click="vm.headerHide()">取消</div></div>
   </div>
 </div>
-<div class="wallet-table list-table" infinite-scroll="vm.loadMore()">
-  <div class="wallet-list" ng-repeat="statements in vm.statements">
-    <div class="list-line" ng-click="vm.showDetails(statements)">
-      <div class="wallet-content wallet-right">
-        <p class="wallet-p" ng-class="{\'text-error\': statements.amount < 0}">￥{{statements.amount}}</p>
-        <p>{{statements.status}}</p>
-        <p ng-if="statements.orderDetailList[0]">查看详情</p></div>
-      <div class="wallet-content re-wallet">
-        <p class="wallet-p">{{statements.targetName}}</p>
-        <p>{{statements.updatedAt}}</p>
-        <p>{{statements.subject}}</p>
-      </div>
+<div ng-include="\'app/views/common/loading.html\'"></div>
+<div class="address-list header-padding" ng-hide="vm.header.headerHide || !vm.regions">
+  <div class="address-list-left">
+    <div class="list-block text-right" ng-repeat="region in vm.regions" ng-click="vm.chooseSchool($index)" ng-class="{active: vm.schoolIndex == $index}">
+      <span>{{(region.name | truncate:8)}}
+        <span></span></span>
     </div>
-    <div class="list-line" ng-if="statements.showDetail">
-      <div class="wallet-detail" ng-repeat="item in statements.orderDetailList">
-        <img ng-src="{{item.thumbName}}">
-        <span>{{item.itemName | truncate:12}}</span>
-        <label>￥{{item.itemPrice}}X{{item.itemQuantity}}</label></div>
-    </div>
+    <div class="list-block text-right list-offset"></div>
   </div>
+  <div class="address-list-right list-table">
+    <div class="list-line" ng-click="vm.goSchool(school)" ng-repeat="school in vm.schools">{{school.name}}</div></div>
+</div>
+<div class="header-padding" ng-if="vm.header.headerHide">
+  <div class="list-table" ng-show="vm.keyword.length > 0">
+    <div class="list-line list-address-line" ng-repeat="school in vm.schoolByKey" ng-click="vm.goSchool(school)">{{school.name}}</div></div>
 </div>

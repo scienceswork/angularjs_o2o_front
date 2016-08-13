@@ -9,7 +9,7 @@ angular.module('webFrontApp')
     // 测试页面
       .state('test', {
         url: '/test',
-        templateUrl: 'views/addresses.html',
+        templateUrl: 'views/lactionSchool.html',
         controller: 'testCtrl',
         controllerAs: 'vm'
       })
@@ -153,6 +153,22 @@ angular.module('webFrontApp')
         url: '/address',
         template: 'haou官网店收货地址详情'
       })
+      // 地址选择
+      .state('sections', {
+        url: '/sections',
+        templateUrl: 'views/sections/sections.html',
+        controller: 'sectionsCtrl',
+        controllerAs: 'vm'
+      })
+      // 城市选择区域
+      .state('city', {
+        url: '/city',
+        templateUrl: 'views/city/city.html',
+        controller: 'cityCtrl',
+        controllerAs: 'cm'
+      })
+        // 选择学校后显示学校所在的好友店
+        
       // 登陆
       .state('login', {
         url: '/login',

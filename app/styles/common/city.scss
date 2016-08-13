@@ -1,0 +1,42 @@
+.text-right {
+  text-align: right;
+}
+
+.address-list {
+  background: #fff;
+  box-sizing: border-box;
+  color: #7c7c7c;
+  height: 100%;
+  font-size: 14px;
+  .address-list-left {
+    background: #f6f6f6;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    top: 44px;
+    width: 99px;
+    z-index: 99;
+    .address-list-block {
+      padding: 13px 17px 13px 15px;
+      line-height: 14px;
+    }
+    .active {
+      background: #fff;
+    }
+  }
+  .address-list-right {
+    margin-left: 98px;
+    width: auto;
+  }
+  .address-list-line {
+    background: #fff;
+    font-size: 13.4px;
+    padding: 9px 12px;
+    position: relative;
+    line-height: 14px;
+  }
+}
+
+.header-padding {
+  padding-top: 44px;
+}

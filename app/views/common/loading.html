@@ -1,7 +1,7 @@
-<div class="center" style="margin-top:-50px;margin-left:-50px;">
-	<div class="loading">
-		<i></i>
-		<i></i>
-		<i></i>
-	</div>
+<div class="header-padding loading-wrapper text-center" data-loading="">
+  <img class="loading-img" alt="加载中" src="http://zhaime.qiniudn.com/uploads/index/20151208loading.png">
+</div>
+<div ng-if="vm.error" class="header-padding loading-wrapper text-center">
+  <img class="loading-img" src="http://zhaime.qiniudn.com/uploads/index/loadingError.png">
+  <p class="text-center loading-p">{{vm.error}}</p>
 </div>
